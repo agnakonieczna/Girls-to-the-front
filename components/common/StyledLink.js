@@ -8,17 +8,19 @@ const StyledLink = ({ as, children, className, href }) => (
 );
 
 export default styled(StyledLink)`
-  color: #0075e0;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  color: #000;
   text-decoration: none;
-  transition: all 0.2s ease-in-out;
+  transition: 0.3s;
+  cursor: pointer;
+  padding: 1rem 0;
 
   &:hover {
-    color: #40a9ff;
+    color: #1654f2;
   }
 
   &:focus {
-    color: #40a9ff;
-    outline: none;
-    border: 0;
+    text-decoration: underline;
   }
 `;
