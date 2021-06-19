@@ -29,6 +29,7 @@ const EventText = styled.p`
   font-size: 1.4rem;
   margin-bottom: 3rem;
   color: ${({ theme }) => theme.colors.marine};
+  line-height: 2rem;
 `;
 
 const EventContentWrapper = styled.div`
@@ -83,7 +84,6 @@ const Image = styled.img`
 `;
 
 const EventCard = ({ event }) => {
-  console.log(event);
   const { slug, title, textPreview, date, image } = event;
 
   return (

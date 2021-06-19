@@ -1,7 +1,6 @@
 import styled from 'styled-components';
-import RedCircle from '../../public/images/red-circle.svg';
 
-const StyledRedCircle = styled(RedCircle)`
+const StyledRedCircle = styled.div`
   width: 424px;
   height: 424px;
   position: absolute;
@@ -19,4 +18,13 @@ const StyledRedCircle = styled(RedCircle)`
   }
 `;
 
-export default StyledRedCircle;
+
+const RedCircle = ({...props}) => {
+  return (
+    <StyledRedCircle {...props}>
+      <img src='/images/red-circle.svg' />
+    </StyledRedCircle>
+  );
+};
+
+export default RedCircle;
