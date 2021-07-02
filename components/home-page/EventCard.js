@@ -94,7 +94,7 @@ const EventCard = ({ event }) => {
         <FlexWrapper>
           <EventDate>{date}</EventDate>
           <EventButton>
-            <Link href={`events/${slug}`}>Read more</Link>
+            <Link href={`/${slug}`}>Read more</Link>
           </EventButton>
         </FlexWrapper>
       </EventContentWrapper>

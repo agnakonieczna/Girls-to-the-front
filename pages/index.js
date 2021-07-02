@@ -3,8 +3,8 @@ import Image from 'next/image';
 import { createClient } from 'contentful';
 import EventsList from '../components/home-page/EventsList';
 import Container from '../components/common/Container';
-import StyledBlueCircle from '../components/common/BlueCircle';
-import StyledRedCircle from '../components/common/RedCircle';
+import BlueCircle from '../components/common/BlueCircle';
+import RedCircle from '../components/common/RedCircle';
 
 export async function getStaticProps() {
   const client = createClient({
@@ -35,10 +35,10 @@ const HomePage = ({ eventsPL }) => {
         <Image src='/images/hero-image.png' width={509} height={517} />
       </ImageWrapper>
       <EventsList eventsPL={eventsPL} />
-      <StyledRedCircle top='0' left='-50%' toptablet='-50px' lefttablet='-50%'/>
-      <StyledBlueCircle top='400px' right='-40%' toptablet='125px' righttablet='-60%'/>
-      <StyledRedCircle top='800px' left='-50%' lefttablet='-40%' />
-      <StyledBlueCircle top= '1500px' right='-50%' toptablet='950px' />
+      <RedCircle top='0' left='-50%' toptablet='-50px' lefttablet='-50%'/>
+      <BlueCircle top='400px' right='-40%' toptablet='125px' righttablet='-60%'/>
+      <RedCircle top='800px' left='-50%' lefttablet='-40%' />
+      <BlueCircle top= '1500px' right='-50%' toptablet='950px' />
     </Container>
   );
 };

@@ -1,25 +1,23 @@
 import styled from 'styled-components';
 import Container from '../common/Container';
+import { motion } from 'framer-motion';
 
-export const StyledHeader = styled(Container)`
+export const StyledHeader = styled(motion.header)`
+  width: 100%;
   font-family: 'Monument Extended';
   font-size: 1.6rem;
   padding: 3rem 1.5rem;
-
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
 
   @media (min-width: 1024px) {
     padding: 3rem 0;
   }
 `;
 
-// export const FlexWrapper = styled.div`
-//   display: flex;
-//   align-items: center;
-//   justify-content: flex-start;
-// `;
+export const HeaderWrapper = styled(Container)`
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+`;
 
 export const Logo = styled.p`
   font-family: 'Monument Extended Bold';
