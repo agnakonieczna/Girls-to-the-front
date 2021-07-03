@@ -3,7 +3,7 @@ import { useRouter } from 'next/router';
 import StyledLink from '../common/StyledLink';
 import { LanguageContext } from '../../context/LanguageContext';
 
-import links from '../../data/headerLinksData';
+import links from '../../data/header-links';
 
 import { NavListItem, ShopList, ShopListItem , StoreLink} from './NavigationLinks.style';
 
