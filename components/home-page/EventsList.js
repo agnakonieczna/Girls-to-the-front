@@ -19,7 +19,7 @@ const EventsList = ({ eventsPL }) => {
   }, [language]);
 
   return events.map((event) => {
-    return <EventCard key={event.id} event={event.fields} />;
+    return <EventCard key={event.sys.id} event={event.fields} />;
   });
 };
 

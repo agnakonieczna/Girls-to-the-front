@@ -6,10 +6,10 @@ export const StyledHeader = styled(motion.header)`
   width: 100%;
   font-family: 'Monument Extended';
   font-size: 1.6rem;
-  padding: 3rem 1.5rem;
+  padding: 3rem 0;
 
   @media (min-width: 1024px) {
-    padding: 3rem 0;
+    padding: 3rem 0 5rem;
   }
 `;
 

@@ -26,13 +26,26 @@ const ImageWrapper = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
 `;
+
+const Caption = styled.p`
+  font-size: 1rem;
+  position: absolute;
+  right: -5.5rem;
+  transform: rotate(-90deg);
+
+  @media(min-width: 768px) {
+    right: -5rem;
+  }
+`
 
 const HomePage = ({ eventsPL }) => {
   return (
     <Container>
       <ImageWrapper>
         <Image src='/images/hero-image.png' width={509} height={517} />
+        <Caption>Ilustracja: Oasis of Hate</Caption>
       </ImageWrapper>
       <EventsList eventsPL={eventsPL} />
       <RedCircle top='0' left='-50%' toptablet='-50px' lefttablet='-50%'/>
