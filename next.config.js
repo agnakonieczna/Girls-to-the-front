@@ -1,5 +1,7 @@
-module.exports = {
-    images: {
-        domains: ['images.ctfassets.net']
-    }
-}
+const withImages = require('next-images');
+
+module.exports = withImages({
+  images: {
+    domains: ['images.ctfassets.net'],
+  },
+});

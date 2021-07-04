@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import { useInView } from 'react-intersection-observer';
 //styles
 import {
   EventWrapper,
@@ -8,14 +9,28 @@ import {
   FlexWrapper,
   EventDate,
   EventButton,
-  Image
+  Image,
 } from './EventCard.style';
 
+const eventCard = {
+  hidden: { opacity: 0, y: 15 },
+  show: { opacity: 1, y: 0, transition: { duration: 0.5 } },
+};
+
 const EventCard = ({ event }) => {
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+    threshold: 0.5
+  });
   const { slug, title, textPreview, date, image } = event;
 
   return (
-    <EventWrapper>
+    <EventWrapper
+      ref={ref}
+      variants={eventCard}
+      initial='hidden'
+      animate={inView ? 'show' : 'hidden'}
+    >
       <EventContentWrapper>
         <EventTitle>{title}</EventTitle>
         <EventText>{textPreview}...</EventText>

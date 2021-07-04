@@ -1,5 +1,7 @@
-const Radio = () => {
-    return <div>Radio</div>
+import RadioInfo from '../components/radio-page/RadioInfo';
+
+const RadioPage = () => {
+  return <RadioInfo />;
 };
 
-export default Radio;
+export default RadioPage;

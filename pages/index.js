@@ -5,6 +5,7 @@ import EventsList from '../components/home-page/EventsList';
 import Container from '../components/common/Container';
 import BlueCircle from '../components/common/BlueCircle';
 import RedCircle from '../components/common/RedCircle';
+import { motion } from 'framer-motion';
 
 export async function getStaticProps() {
   const client = createClient({
@@ -22,7 +23,7 @@ export async function getStaticProps() {
   };
 }
 
-const ImageWrapper = styled.div`
+const ImageWrapper = styled(motion.div)`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -35,23 +36,35 @@ const Caption = styled.p`
   right: -5.5rem;
   transform: rotate(-90deg);
 
-  @media(min-width: 768px) {
+  @media (min-width: 768px) {
     right: -5rem;
   }
-`
+`;
+
+const mainImage = {
+  hidden: { opacity: 0, y: 20 },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.5,
+      delay: 1,
+    },
+  },
+};
 
 const HomePage = ({ eventsPL }) => {
   return (
     <Container>
-      <ImageWrapper>
+      <ImageWrapper variants={mainImage} initial='hidden' animate='show'>
         <Image src='/images/hero-image.png' width={509} height={517} />
         <Caption>Ilustracja: Oasis of Hate</Caption>
       </ImageWrapper>
       <EventsList eventsPL={eventsPL} />
-      <RedCircle top='0' left='-50%' toptablet='-50px' lefttablet='-50%'/>
-      <BlueCircle top='400px' right='-40%' toptablet='125px' righttablet='-60%'/>
+      <RedCircle top='0' left='-50%' toptablet='-50px' lefttablet='-50%' />
+      <BlueCircle top='400px' right='-40%' toptablet='125px' righttablet='-60%' />
       <RedCircle top='800px' left='-50%' lefttablet='-40%' />
-      <BlueCircle top= '1500px' right='-50%' toptablet='950px' />
+      <BlueCircle top='1500px' right='-50%' toptablet='950px' />
     </Container>
   );
 };

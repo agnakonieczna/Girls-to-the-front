@@ -1,5 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
 import { normalize } from 'styled-normalize';
+import cursor from '../public/images/cursor.png';
 
 const GlobalStyle = createGlobalStyle`
 ${normalize}
@@ -17,7 +18,8 @@ html {
   body {
     font-size: 1rem;
     font-family: 'Inter', sans-serif;
-    overflow-y: ${({overflow}) => overflow ? 'hidden' : 'scroll'};
+    overflow-y: ${({ overflow }) => (overflow ? 'hidden' : 'scroll')};
+     cursor: url(${cursor}), auto;
   }
 
   h2 {
@@ -54,4 +56,3 @@ html {
 `;
 
 export default GlobalStyle;
-

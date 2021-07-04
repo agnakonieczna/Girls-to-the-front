@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 import Container from '../../components/common/Container';
+import { motion } from 'framer-motion';
 
-export const ImageWrapper = styled.div`
+export const ImageWrapper = styled(motion.div)`
   display: flex;
   justify-content: center;
   align-items: center;

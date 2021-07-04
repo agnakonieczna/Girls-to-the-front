@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
-export const EventWrapper = styled.div`
+export const EventWrapper = styled(motion.div)`
   max-width: 965px;
   height: auto;
   background-color: #fff;
@@ -72,7 +73,7 @@ export const EventButton = styled.button`
 export const Image = styled.img`
   width: auto;
   height: 100%;
-  max-height: 30rem;
+  max-height: 25rem;
   object-fit: cover;
 
   @media (min-width: 1024px) {
