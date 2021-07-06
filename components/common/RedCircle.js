@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import circle from '../../public/images/red-circle.png';
 
 const StyledRedCircle = styled.div`
   width: 424px;
@@ -22,7 +23,7 @@ const StyledRedCircle = styled.div`
 const RedCircle = ({...props}) => {
   return (
     <StyledRedCircle {...props}>
-      <img src='/images/red-circle.svg' />
+      <img src={circle} alt='' />
     </StyledRedCircle>
   );
 };

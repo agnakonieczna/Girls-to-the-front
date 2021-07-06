@@ -6,6 +6,7 @@ import Container from '../components/common/Container';
 import BlueCircle from '../components/common/BlueCircle';
 import RedCircle from '../components/common/RedCircle';
 import { motion } from 'framer-motion';
+import ScrollToTop from '../components/common/ScrollToTop';
 
 export async function getStaticProps() {
   const client = createClient({
@@ -48,7 +49,7 @@ const mainImage = {
     y: 0,
     transition: {
       duration: 0.5,
-      delay: 1,
+      delay: 0.3,
     },
   },
 };
@@ -65,6 +66,7 @@ const HomePage = ({ eventsPL }) => {
       <BlueCircle top='400px' right='-40%' toptablet='125px' righttablet='-60%' />
       <RedCircle top='800px' left='-50%' lefttablet='-40%' />
       <BlueCircle top='1500px' right='-50%' toptablet='950px' />
+      <ScrollToTop />
     </Container>
   );
 };
