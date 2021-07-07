@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
 
 const Paragraph = styled.p`
-  margin-bottom: 3rem;
+  margin-bottom: ${({noMargin}) => noMargin ? '0' : '3rem'};
   line-height: 35px;
   -webkit-text-stroke: 0.9px black;
   color: ${({ theme }) => theme.colors.marine};

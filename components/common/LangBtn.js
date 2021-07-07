@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { useContext } from 'react';
+import { useRouter } from 'next/router';
 import { LanguageContext } from '../../context/LanguageContext';
 
 const StyledLangBtn = styled.button`
@@ -16,9 +17,16 @@ const StyledLangBtn = styled.button`
 `;
 
 const LangBtn = () => {
+  const router = useRouter();
   const { language, changeLanguage } = useContext(LanguageContext);
 
-  return <StyledLangBtn onClick={changeLanguage}>{language === 'PL' ? 'EN' : 'PL'}</StyledLangBtn>;
+  return (
+    <div>
+      {router.pathname === '/[slug]' ? null : (
+        <StyledLangBtn onClick={changeLanguage}>{language === 'PL' ? 'EN' : 'PL'}</StyledLangBtn>
+      )}
+    </div>
+  );
 };
 
 export default LangBtn;

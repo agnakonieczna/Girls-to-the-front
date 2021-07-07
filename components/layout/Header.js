@@ -6,7 +6,7 @@ import NavigationLinks from './NavigationLinks';
 import SocialMediaIcons from './SocialMediaIcons';
 import LangBtn from '../common/LangBtn';
 import FlexWrapper from '../common/FlexWrapper';
-
+//styles
 import * as Style from './Header.style';
 
 const Header = ({ handleOverflow }) => {
