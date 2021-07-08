@@ -8,11 +8,17 @@ export const TeamImagesWrapper = styled.div`
   justify-content: center;
   align-items: flex-end;
 
-  & div:first-child {
+  div:first-child {
     align-self: flex-start;
   }
 
-  & div:last-child {
+  div:nth-child(2) {
+    @media (min-width: 768px) {
+      margin-bottom: 2rem;
+    }
+  }
+
+  div:last-child {
     align-self: center;
   }
 

@@ -16,9 +16,3 @@ export const TextWrapper = styled.div`
     width: 55%;
   }
 `;
-
-export const ImageWrapper = styled(motion.div)`
-  @media (min-width: 768px) {
-    width: 45%;
-  }
-`;

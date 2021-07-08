@@ -7,6 +7,7 @@ const FlexWrapper = styled.div`
     align-items: ${({ align }) => (align === 'start' ? 'flex-start' : 'center')};
     justify-content: space-between;
     margin-top: ${({ top }) => top && '4rem'};
+    margin-bottom: ${({bottom}) => bottom && '2rem'};
   }
 `;
 

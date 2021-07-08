@@ -1,11 +1,11 @@
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import { BLOCKS } from '@contentful/rich-text-types';
-import Image from 'next/image';
 import Container from '../common/Container';
 import BlueCircle from '../common/BlueCircle';
 import RedCircle from '../common/RedCircle';
+import CustomImage from '../common/CustomImage';
 //styles
-import { ImageWrapper, EventTitle, EventDate, TextParagraph } from './EventDetails.style';
+import { EventTitle, EventDate, TextParagraph } from './EventDetails.style';
 
 const options = {
   renderNode: {
@@ -18,14 +18,13 @@ const EventDetails = ({ selectedEvent }) => {
 
   return (
     <Container>
-      <ImageWrapper>
-        <Image
-          src={'https:' + image.fields.file.url}
-          alt={title}
-          width={image.fields.file.details.image.width}
-          height={image.fields.file.details.image.height}
-        />
-      </ImageWrapper>
+      <CustomImage
+        src={'https:' + image.fields.file.url}
+        alt={title}
+        width={image.fields.file.details.image.width}
+        height={image.fields.file.details.image.height}
+        center
+      />
       <EventTitle>{title}</EventTitle>
       <EventDate>{date}</EventDate>
       {documentToReactComponents(text, options)}

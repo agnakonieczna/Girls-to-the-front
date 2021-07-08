@@ -1,6 +1,7 @@
 import styled, { css } from 'styled-components';
+import { motion } from 'framer-motion';
 
-const Paragraph = styled.p`
+const Paragraph = styled(motion.p)`
   margin-bottom: ${({noMargin}) => noMargin ? '0' : '3rem'};
   line-height: 35px;
   -webkit-text-stroke: 0.9px black;
@@ -15,6 +16,7 @@ const Paragraph = styled.p`
 
   @media (min-width: 768px) {
     width: ${({ width }) => width};
+    line-height: 35px;
   }
 
   ${({ blue }) =>
@@ -44,3 +46,4 @@ const Paragraph = styled.p`
 
 
 export default Paragraph;
+

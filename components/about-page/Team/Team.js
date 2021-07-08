@@ -1,13 +1,12 @@
 import { useContext } from 'react';
 import { LanguageContext } from '../../../context/LanguageContext';
-import Image from 'next/image';
 //styles
 import Container from '../../common/Container';
 import RedCircle from '../../common/RedCircle';
 import BlueCircle from '../../common/BlueCircle';
 import Section from '../../common/Section';
 import FlexWrapper from '../../common/FlexWrapper';
-import ImageWrapper from '../../common/ImageWrapper';
+import CustomImage from '../../common/CustomImage';
 import { TeamImagesWrapper } from './Team.style';
 //data
 import pageContent from '../../../data/about-main';
@@ -26,9 +25,7 @@ const Team = () => {
       <BlueCircle top='800px' left='0' />
       <Section>
         <FlexWrapper>
-          <ImageWrapper>
-            <Image src={demonstration} width={321} height={370} />
-          </ImageWrapper>
+          <CustomImage marginRight src={demonstration} width={321} height={370} alt='' />
           {pageContent[language].four}
         </FlexWrapper>
       </Section>
@@ -37,15 +34,9 @@ const Team = () => {
         <FlexWrapper align='start'>
           {pageContent[language].six}
           <TeamImagesWrapper>
-            <ImageWrapper>
-              <Image src={magdalena} height={366} width={372} />
-            </ImageWrapper>
-            <ImageWrapper margin>
-              <Image src={maja} height={326} width={353} />
-            </ImageWrapper>
-            <ImageWrapper>
-              <Image src={katarzyna} height={390} width={410} />
-            </ImageWrapper>
+            <CustomImage src={magdalena} height={366} width={372} alt='' />
+            <CustomImage src={maja} height={326} width={353} alt='' />
+            <CustomImage src={katarzyna} height={390} width={410} alt='' />
           </TeamImagesWrapper>
         </FlexWrapper>
       </Section>
