@@ -89,7 +89,10 @@ const aboutMain = {
     ),
     nine: (
       <Paragraph blue width='50%'>
-        ➽ Wydałyśmy ponad 10 <Link href='/zines'>zinów</Link>:{' '}
+        ➽{' '}
+        <Bold blue>
+          Wydałyśmy ponad 10 <Link href='/zines'>zinów</Link>:
+        </Bold>{' '}
         <Italic>
           Dziewczyny w muzyce (2015), Stay strong! (2016), Ciało (2016), Relacje między dziewczynami
           (2017), Seks (2017), Obcość (2017), All Queers to the Front (2018), Choroba i
@@ -252,15 +255,28 @@ const aboutMain = {
     ),
     nine: (
       <Paragraph blue width='50%'>
-        ➽ We have published over ten <Link href='/zines'>zines</Link>:{' '}
+        ➽{' '}
+        <Bold blue>
+          We have published over ten <Link href='/zines'>zines</Link>:
+        </Bold>{' '}
         <Italic>
           Dziewczyny w muzyce [Girls in Music] (2015); Stay strong! (2016); Ciało [Body] (2016);
           Relacje między dziewczynami [Relationships between women] (2017); Seks [Sex] (2017);
           Obcość [Otherness] (2017); All Queers to the Front (2018); Choroba i niepełnosprawność
           [Disability and illness] (2019); Przyszłość / Future (2019); Queer Erotica Zine (2020);
-        </Italic>
-        , ziny powstałe podczas warsztatów. Nasze ziny są do kupienia na Allegro, Etsy i w wybranych
-        księgarniach.
+        </Italic>{' '}
+        zines created during the workshops, including GTTFxUnsound (2019).{' '}
+        <Bold blue>
+          Some of them are avaible to buy on{' '}
+          <a
+            href='https://www.etsy.com/shop/GirlstotheFrontPL'
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            Etsy
+          </a>
+          .
+        </Bold>
       </Paragraph>
     ),
     ten: (

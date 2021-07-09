@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const List = styled.ul`
-  /* background-image: url(${svg}); */
+  background-image: url('/images/about-us-list-background.svg');
   background-position: 50% 50%;
   background-repeat: no-repeat;
   background-size: cover;
@@ -13,9 +13,6 @@ const List = styled.ul`
     width: 90%;
     height: 100%;
     padding-left: 3rem;
-  }
-
-  @media (min-width: 1024px) {
   }
 `;
 

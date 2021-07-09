@@ -1,22 +1,49 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
-export const Rainbow = styled.div`
-  position: relative;
+export const RainbowBackground = styled(motion.div)`
+  width: 100%;
+  height: 50rem;
   background-image: url('/images/rainbow-background.svg');
   background-repeat: no-repeat;
   background-position: center;
-  padding: 9rem 3.5rem;
+  position: absolute;
+  top: 5%;
+  left: 0;
   margin: 4.5rem auto 0;
+
+  @media (min-width: 425px) {
+    top: -5%;
+  }
+
+  @media (min-width: 500px) {
+    top: -10%;
+    height: 45rem;
+  }
+
+  @media (min-width: 768px) {
+    top: -5%;
+    height: 40rem;
+    background-size: contain;
+  }
+
+  
+  @media (min-width: 1024px) {
+    top: -10%;
+    height: 50rem;
+  }
+`;
+
+export const Rainbow = styled.div`
+  position: relative;
+  margin: 4.5rem auto 0;
+  padding: 9rem 3.5rem;
 
   @media (min-width: 768px) {
     padding: 8rem 0;
-    background-size: contain;
     max-width: 958px;
   }
 
-  @media (min-width: 1024px) {
-    background-size: 87% auto;
-  }
 
   & > p {
     @media (min-width: 768px) {

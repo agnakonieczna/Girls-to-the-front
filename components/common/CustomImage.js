@@ -36,7 +36,7 @@ const CustomImage = ({ src, alt, width, height, ...props }) => {
       ref={ref}
       {...props}
     >
-      <Image src={src} width={width} height={height} alt={alt} onLoad={onLoadHandler} />;
+      <Image src={src} width={width} height={height} alt={alt} onLoad={onLoadHandler} />
     </ImageWrapper>
   );
 };

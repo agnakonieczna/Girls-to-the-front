@@ -12,6 +12,10 @@ const ImageWrapper = styled(motion.div)`
     margin-right: ${({ marginRight }) => marginRight && '3rem'};
     margin-left: ${({ marginLeft }) => marginLeft && '3rem'};
     width: ${({width}) => width && width};
+    height: auto;
+    position: ${({absolute}) => absolute && 'absolute'};
+    top: ${({ top }) => top};
+    left: ${({ left }) => left};
   }
 `;
 
