@@ -1,9 +1,20 @@
 import Paragraph from '../components/common/Paragraph';
 import Bold from '../components/common/Bold';
 import Italic from '../components/common/Italic';
-import List from '../components/common/List';
+import { List, ListWrapper, ListBackground } from '../components/common/List';
 import ArtistsWrapper from '../components/common/ArtistWrapper';
 import Link from 'next/link';
+
+const listContainer = {
+  start: { scale: 1 },
+  pulse: {
+    scale: 1.06,
+    transition: {
+      duration: 2,
+      yoyo: Infinity,
+    },
+  },
+};
 
 const aboutMain = {
   PL: {
@@ -126,25 +137,29 @@ const aboutMain = {
       </Paragraph>
     ),
     eleven: (
-      <List>
-        <li>
-          <Paragraph blue>
-            ➽ Od lipca 2019 prowadzimy audycję w Radiu Kapitał, w której m.in. rozmawiamy z
-            gościnami, dzielimy się ulubionymi piosenkami i czytamy fragmenty zinów.
-          </Paragraph>
-        </li>
-        <li>
-          <Paragraph pink>
-            ➽ Swoimi działaniami wspierałyśmy m.in. kampanię “TAK! to miłość” Amnesty International.
-          </Paragraph>
-        </li>
-        <li>
-          <Paragraph blue>
-            ➽ Razem z Trzema Szóstkami przygotowałyśmy przegląd dziewczyńskiego niezalu (
-            <a href='/'>Youtube</a>, 2019).
-          </Paragraph>
-        </li>
-      </List>
+      <ListWrapper>
+        <ListBackground variants={listContainer} initial='start' animate='pulse' />
+        <List>
+          <li>
+            <Paragraph blue>
+              ➽ Od lipca 2019 prowadzimy audycję w Radiu Kapitał, w której m.in. rozmawiamy z
+              gościnami, dzielimy się ulubionymi piosenkami i czytamy fragmenty zinów.
+            </Paragraph>
+          </li>
+          <li>
+            <Paragraph pink>
+              ➽ Swoimi działaniami wspierałyśmy m.in. kampanię “TAK! to miłość” Amnesty
+              International.
+            </Paragraph>
+          </li>
+          <li>
+            <Paragraph blue>
+              ➽ Razem z Trzema Szóstkami przygotowałyśmy przegląd dziewczyńskiego niezalu (
+              <a href='/'>Youtube</a>, 2019).
+            </Paragraph>
+          </li>
+        </List>
+      </ListWrapper>
     ),
     twelve: (
       <Paragraph pink margin>

@@ -19,11 +19,14 @@ import poster from '../../../public/images/poster.png';
 import pageContent from '../../../data/about-main';
 
 const Wrapper = styled.div`
-  height: 420px;
-  width: 80%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+
+  @media (min-width: 768px) {
+    height: 420px;
+    width: 80%;
+  }
 `;
 
 const ZineImgWrapper = styled.div`
@@ -94,7 +97,7 @@ const AboutUs = () => {
       </Container>
       <Section flex>
         <FlexWrapper>
-          <CustomImage src={poster} width={254} height={382} alt='' />
+          <CustomImage src={poster} width={254} height={382} alt=''/>
           {pageContent[language].eleven}
         </FlexWrapper>
       </Section>

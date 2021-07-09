@@ -1,26 +1,24 @@
-import styled from 'styled-components';
 //styles
 import Container from '../../common/Container';
 import Paragraph from '../../common/Paragraph';
 import BlueCircle from '../../common/BlueCircle';
+import { Wrapper, Background } from './Concerts.style';
 
-const BackgroundWrapper = styled.div`
-  position: relative;
-  background-image: url('/images/concerts-background.svg');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  max-width: 958px;
-  margin: 0 auto;
-
-  @media (min-width: 768px) {
-    background-size: contain;
-  }
-`;
+const backgroundContainer = {
+  start: { scale: 1 },
+  pulse: {
+    scale: 1.06,
+    transition: {
+      duration: 2,
+      yoyo: Infinity,
+    },
+  },
+};
 
 const Concerts = () => {
   return (
-    <BackgroundWrapper>
+    <Wrapper>
+      <Background variants={backgroundContainer} initial='start' animate='pulse'/>
       <Container>
         <BlueCircle top='400px' left='-20%' toptablet='0' />
         <Paragraph pink margin>
@@ -37,7 +35,7 @@ const Concerts = () => {
           Waterflower (LV) | Wilcze Jagody | Vittuma | Xarah Dion (CA) | Yana | Young Majli
         </Paragraph>
       </Container>
-    </BackgroundWrapper>
+    </Wrapper>
   );
 };
 
