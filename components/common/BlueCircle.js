@@ -11,7 +11,7 @@ const StyledBlueCircle = styled.div`
   right: ${({ right }) => right && right};
   z-index: -1;
 
-  @media (min-width: 768px) {
+  @media (min-width: 425px) {
     width: 924px;
     height: 924px;
     top: ${({ toptablet }) => toptablet && toptablet};

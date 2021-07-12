@@ -39,7 +39,7 @@ const ContactInfo = () => {
           <Fragment key={index}>{paragraph}</Fragment>
         ))}
       </TextWrapper>
-      <CustomImage src={photo} alt='' width={465} height={370} />
+      <CustomImage src={photo} alt='' width={465} height={370} marginLeft/>
       <RedCircle top='-10%' left='-50%' toptablet='-25%' />
       <BlueCircle top='30%' right='-50%' toptablet='10%' />
       <RedCircle top='90%' left='-10%' toptablet='100%' />

@@ -7,7 +7,7 @@ const ImageWrapper = styled(motion.div)`
 
   @media (min-width: 768px) {
     margin: 0 ${({ center }) => center && 'auto'};
-    margin-bottom: ${({ margin }) => margin && '4rem'};
+    margin-bottom: ${({ marginBottom }) => marginBottom && marginBottom};
     align-self: ${({ align }) => align === 'end' && 'flex-end'};
     margin-right: ${({ marginRight }) => marginRight && '3rem'};
     margin-left: ${({ marginLeft }) => marginLeft && '3rem'};
