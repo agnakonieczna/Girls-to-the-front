@@ -5,13 +5,16 @@ import { List, ListWrapper, ListBackground } from '../components/common/List';
 import ArtistsWrapper from '../components/common/ArtistWrapper';
 import Link from 'next/link';
 
+import CustomParagraph from '../components/common/CustomParagraph';
+
 const listContainer = {
   start: { scale: 1 },
   pulse: {
     scale: 1.06,
     transition: {
       duration: 2,
-      yoyo: Infinity,
+      repeat: Infinity,
+      repeatType: 'mirror',
     },
   },
 };
@@ -19,7 +22,7 @@ const listContainer = {
 const aboutMain = {
   PL: {
     first: (
-      <Paragraph width='38%'>
+      <CustomParagraph width='38%'>
         <Bold>
           Girls to the Front to inicjatywa Agaty Wnuk i Oli Kamińskiej, działająca w Warszawie od
           2015 roku.
@@ -30,7 +33,7 @@ const aboutMain = {
           <Link href='/zines'>feministyczno-queerowego zina</Link>
         </Bold>
         . Od 2019 roku prowadzimy także autorską <Link href='/radio'>audycję w Radiu Kapitał</Link>.
-      </Paragraph>
+      </CustomParagraph>
     ),
     second: (
       <Paragraph margin>
@@ -303,24 +306,27 @@ const aboutMain = {
       </Paragraph>
     ),
     eleven: (
-      <List>
-        <li>
-          <Paragraph blue>
-            ➽ Since 2019, we have our radio show at Radio Kapitał community radio.
-          </Paragraph>
-        </li>
-        <li>
-          <Paragraph pink>
-            ➽ We supported, among others, “TAK! to miłość” campaing by Amnesty International.
-          </Paragraph>
-        </li>
-        <li>
-          <Paragraph blue>
-            ➽ Together with Trzy Szóstki, we created a selection of girls’ independent music
-            (Youtube, 2019){' '}
-          </Paragraph>
-        </li>
-      </List>
+      <ListWrapper>
+        <ListBackground variants={listContainer} initial='start' animate='pulse' />
+        <List>
+          <li>
+            <Paragraph blue>
+              ➽ Since 2019, we have our radio show at Radio Kapitał community radio.
+            </Paragraph>
+          </li>
+          <li>
+            <Paragraph pink>
+              ➽ We supported, among others, “TAK! to miłość” campaing by Amnesty International.
+            </Paragraph>
+          </li>
+          <li>
+            <Paragraph blue>
+              ➽ Together with Trzy Szóstki, we created a selection of girls’ independent music
+              (Youtube, 2019){' '}
+            </Paragraph>
+          </li>
+        </List>
+      </ListWrapper>
     ),
     twelve: (
       <Paragraph pink margin>

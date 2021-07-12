@@ -1,5 +1,4 @@
 import { useContext } from 'react';
-import styled from 'styled-components';
 import { LanguageContext } from '../../../context/LanguageContext';
 //styles
 import Container from '../../common/Container';
@@ -8,6 +7,7 @@ import BlueCircle from '../../common/BlueCircle';
 import Section from '../../common/Section';
 import FlexWrapper from '../../common/FlexWrapper';
 import CustomImage from '../../common/CustomImage';
+import { Wrapper, ZineImgWrapper } from './AboutUs.style';
 //assets
 import workshop from '../../../public/images/workshop.png';
 import girlsDjsOne from '../../../public/images/ola-kamińska-and-agata-wnuk-djs-1.png';
@@ -17,26 +17,6 @@ import zinesTwo from '../../../public/images/zine-inside.png';
 import poster from '../../../public/images/poster.png';
 //data
 import pageContent from '../../../data/about-main';
-
-const Wrapper = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-
-  @media (min-width: 768px) {
-    height: 420px;
-    width: 80%;
-  }
-`;
-
-const ZineImgWrapper = styled.div`
-  @media (min-width: 768px) {
-    position: relative;
-    width: 50%;
-    height: 350px;
-    margin-left: 6rem;
-  }
-`;
 
 const AboutUs = () => {
   const { language } = useContext(LanguageContext);
@@ -90,7 +70,7 @@ const AboutUs = () => {
         </Section>
         <Section>
           <FlexWrapper>
-            <CustomImage src={workshop} width={283} height={213} alt='' />
+            <CustomImage src={workshop} width={283} height={213} alt='' marginRight/>
             {pageContent[language].ten}
           </FlexWrapper>
         </Section>

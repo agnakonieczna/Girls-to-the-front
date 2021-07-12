@@ -14,7 +14,8 @@ const rainbowContainer = {
     scale: 1.06,
     transition: {
       duration: 2,
-      yoyo: Infinity,
+      repeat: Infinity,
+      repeatType: 'mirror'
     },
   },
 };

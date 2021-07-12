@@ -1,33 +1,14 @@
 import { useContext } from 'react';
-import styled from 'styled-components';
 import { LanguageContext } from '../../../context/LanguageContext';
 //styles
 import Container from '../../common/Container';
 import RedCircle from '../../common/RedCircle';
 import BlueCircle from '../../common/BlueCircle';
+import { MediaTitle, MediaList } from './Media.style';
 //data
 import pageContent from '../../../data/about-main';
 import mediaContent from '../../../data/about-media';
 import textsContent from '../../../data/about-texts';
-
-const MediaTitle = styled.h2`
-  font-size: 4rem;
-  font-family: 'Monument Extended Bold';
-  color: ${({ theme }) => theme.colors.fuchsia};
-  font-weight: 700;
-  text-align: center;
-  margin: 20rem 0 2rem;
-  padding: 2rem;
-  -webkit-text-stroke: 0.5px black;
-  background-image: url('/images/media-background.svg');
-  background-repeat: no-repeat;
-  background-size: contain;
-  background-position: center center;
-`;
-
-const MediaList = styled.ul`
-  margin-bottom: 2rem;
-`;
 
 const Media = () => {
   const { language } = useContext(LanguageContext);

@@ -23,10 +23,11 @@ export const ListBackground = styled(motion.div)`
   background-repeat: no-repeat;
   background-size: cover;
   height: 60rem;
-  width: 100%;
+  width: 110%;
   position: absolute;
   top: -20%;
   left: 0;
+  z-index: -1;
 
   @media (min-width: 425px) {
     top: -20%;
@@ -38,5 +39,7 @@ export const ListBackground = styled(motion.div)`
     background-position: 100% 50%;
     height: 100%;
     top: 0;
+    left: unset;
+    right: 0;
   }
 `;
