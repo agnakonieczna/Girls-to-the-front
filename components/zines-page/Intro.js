@@ -4,6 +4,8 @@ import { LanguageContext } from '../../context/LanguageContext';
 //styles
 import CustomImage from '../common/CustomImage';
 import FlexWrapper from '../common/FlexWrapper';
+import ImageWrapper from '../common/ImageWrapper';
+import Image from 'next/image';
 //data
 import pageContent from '../../data/zines-intro';
 //assets
@@ -25,7 +27,9 @@ const ZineIntro = () => {
   return (
     <>
       <FlexWrapper bottom>
-        <CustomImage src={zines} width={548} height={504} alt='' marginRight/>
+        <ImageWrapper marginRight>
+          <Image src={zines} width={548} height={504} alt='' priority={true} />
+        </ImageWrapper>
         {pageContent[language].first}
       </FlexWrapper>
       {pageContent[language].second.map((paragraph, index) => (

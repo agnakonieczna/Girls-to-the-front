@@ -20,7 +20,7 @@ const Concerts = () => {
     <Wrapper>
       <Background variants={backgroundContainer} initial='start' animate='pulse'/>
       <Container>
-        <BlueCircle top='400px' left='-20%' toptablet='0' />
+        <BlueCircle top='800px' left='-20%' toptablet='200px' />
         <Paragraph pink margin>
           Ada Lizardziuk | agus | BIBI | bibimbobo | Bez i Nadzieja | Brednie | Cudowne Lata |
           Deadly Firend | Di Libe brent wi a nase Szmate | Dog Whistle | DMITRIEVNA (CZ) | Dubais

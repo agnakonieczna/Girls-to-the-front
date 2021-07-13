@@ -44,7 +44,6 @@ const ZineList = () => {
       </ZinesTitle>
       {language === 'PL' ? <ZineListPL /> : <ZineListEN />}
       <RedCircle top='0' left='-50%' toptablet='0' />
-      <BlueCircle top='30%' left='-60%' toptablet='35%' />
     </>
   );
 };

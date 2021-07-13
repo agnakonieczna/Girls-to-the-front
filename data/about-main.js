@@ -5,7 +5,7 @@ import { List, ListWrapper, ListBackground } from '../components/common/List';
 import ArtistsWrapper from '../components/common/ArtistWrapper';
 import Link from 'next/link';
 
-import CustomParagraph from '../components/common/CustomParagraph';
+// import CustomParagraph from '../components/common/CustomParagraph';
 
 const listContainer = {
   start: { scale: 1 },
@@ -22,7 +22,7 @@ const listContainer = {
 const aboutMain = {
   PL: {
     first: (
-      <CustomParagraph width='38%'>
+      <Paragraph width='38%'>
         <Bold>
           Girls to the Front to inicjatywa Agaty Wnuk i Oli Kamińskiej, działająca w Warszawie od
           2015 roku.
@@ -33,7 +33,7 @@ const aboutMain = {
           <Link href='/zines'>feministyczno-queerowego zina</Link>
         </Bold>
         . Od 2019 roku prowadzimy także autorską <Link href='/radio'>audycję w Radiu Kapitał</Link>.
-      </CustomParagraph>
+      </Paragraph>
     ),
     second: (
       <Paragraph margin>

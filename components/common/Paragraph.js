@@ -6,7 +6,6 @@ const Paragraph = styled(motion.p)`
   line-height: 35px;
   -webkit-text-stroke: 0.9px black;
   color: ${({ theme }) => theme.colors.marine};
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
   & > a {
     color: ${({ theme }) => theme.colors.marine};

@@ -20,7 +20,6 @@ const eventCard = {
 const EventCard = ({ event }) => {
   const [ref, inView] = useInView({
     triggerOnce: true,
-    threshold: 0.5
   });
   const { slug, title, textPreview, date, image } = event;
 

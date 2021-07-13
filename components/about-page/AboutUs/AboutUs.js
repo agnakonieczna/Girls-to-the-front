@@ -69,7 +69,7 @@ const AboutUs = () => {
           </FlexWrapper>
         </Section>
         <Section>
-          <FlexWrapper>
+          <FlexWrapper align='start'>
             <CustomImage src={workshop} width={283} height={213} alt='' marginRight/>
             {pageContent[language].ten}
           </FlexWrapper>

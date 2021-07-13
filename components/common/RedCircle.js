@@ -2,8 +2,8 @@ import styled from 'styled-components';
 import circle from '../../public/images/red-circle.png';
 
 const StyledRedCircle = styled.div`
-  width: 424px;
-  height: 424px;
+  width: 924px;
+  height: 924px;
   position: absolute;
   top: ${({ top }) => top && top};
   left: ${({ left }) => left && left};
@@ -12,15 +12,14 @@ const StyledRedCircle = styled.div`
   z-index: -1;
 
   @media (min-width: 425px) {
-    width: 924px;
-    height: 924px;
+    /* width: 924px;
+    height: 924px; */
     top: ${({ toptablet }) => toptablet && toptablet};
     left: ${({ lefttablet }) => lefttablet && lefttablet};
   }
 `;
 
-
-const RedCircle = ({...props}) => {
+const RedCircle = ({ ...props }) => {
   return (
     <StyledRedCircle {...props}>
       <img src={circle} alt='' />

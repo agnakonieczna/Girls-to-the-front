@@ -19,6 +19,7 @@
     "smoothscroll-polyfill": "^0.4.4",
     "styled-components": "^5.3.0",
     "styled-normalize": "^8.0.7",
+    "swiper": "^6.7.5",
     "swr": "^0.5.6"
   },
   "devDependencies": {
