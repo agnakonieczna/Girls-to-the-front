@@ -1,6 +1,7 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
-export const StyledMobileMenu = styled.div`
+export const StyledMobileMenu = styled(motion.div)`
   width: 100vw;
   height: 100vh;
   position: fixed;
@@ -8,11 +9,9 @@ export const StyledMobileMenu = styled.div`
   left: 0;
   z-index: 1;
   background-color: #fff;
-  transform: ${(props) => (props.menuOpen ? 'translateX(0)' : 'translateX(-100vw)')};
-  transition: transform 0.25s ease-in-out;
 `;
 
-export const NavList = styled.ul`
+export const NavList = styled(motion.ul)`
   height: 80vh;
   padding-top: 8rem;
   display: flex;
@@ -21,12 +20,14 @@ export const NavList = styled.ul`
   align-items: center;
 `;
 
-export const SocialMediaIcons = styled.div`
+
+export const SocialMediaIcons = styled(motion.div)`
   display: flex;
   position: absolute;
   bottom: 10%;
   left: 50%;
-  transform: translateX(-50%) translateY(${({ menuOpen }) => (menuOpen ? '0' : '100%')});
-  opacity: ${({ menuOpen }) => (menuOpen ? '1' : '0')};
-  transition: transform 0.25s ease-in-out 0.25s, opacity 0.25s ease-in-out 0.2s;
+
+  @media (min-width: 768px) {
+    display: none;
+  }
 `;

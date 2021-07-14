@@ -10,6 +10,7 @@ const StyledLangBtn = styled.button`
   padding: 1rem;
   cursor: pointer;
   z-index: 2;
+  position: relative;
 
   @media (min-width: 1024px) {
     margin-right: 1.5rem;

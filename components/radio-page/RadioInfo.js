@@ -26,9 +26,9 @@ const RadioInfo = () => {
       {radioContent[language].second.map((paragraph, index) => (
         <Fragment key={index + '98uiushywg'}>{paragraph}</Fragment>
       ))}
-      <RedCircle top='-30%' right='-60%' />
-      <BlueCircle top='20%' right='-70%' />
-      <RedCircle top='10%' left='-70%' />
+      <RedCircle top='-70%' right='-60%' toptablet='-30%'/>
+      <BlueCircle top='60%' right='-90%' toptablet='20%'righttablet='-70%'/>
+      <RedCircle top='10%' left='-40%' lefttablet='-70%'/>
     </Container>
   );
 };

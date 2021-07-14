@@ -1,11 +1,11 @@
 import { useContext } from 'react';
 import { useRouter } from 'next/router';
-import StyledLink from '../common/StyledLink';
 import { LanguageContext } from '../../context/LanguageContext';
-
+//data
 import links from '../../data/header-links';
-
-import { NavListItem, ShopList, ShopListItem , StoreLink} from './NavigationLinks.style';
+//styles
+import { NavListItem, ShopList, ShopListItem, StoreLink } from './NavigationLinks.style';
+import StyledLink from '../common/StyledLink';
 
 const NavigationList = ({ shopLinkClicked, toggleShopListVisibility, handleMenuClose }) => {
   const router = useRouter();

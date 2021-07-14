@@ -61,10 +61,10 @@ const HomePage = ({ eventsPL }) => {
         <Caption>Ilustracja: Oasis of Hate</Caption>
       </ImageWrapper>
       <EventsList eventsPL={eventsPL} />
-      <RedCircle top='0' left='-50%' toptablet='-50px' lefttablet='-50%' />
-      <BlueCircle top='400px' right='-40%' toptablet='125px' righttablet='-60%' />
-      <RedCircle top='800px' left='-50%' lefttablet='-40%' />
-      <BlueCircle top='1500px' right='-50%' toptablet='950px' />
+      <RedCircle top='-100px' left='-100%' toptablet='-50px' lefttablet='-50%' />
+      <BlueCircle top='700px' right='-40%' toptablet='125px' righttablet='-60%' />
+      <RedCircle top='1500px' left='-50%' toptablet='1000px' lefttablet='-40%' />
+      <BlueCircle top='1900px' right='-50%' toptablet='950px' />
       <ScrollToTop />
     </Container>
   );

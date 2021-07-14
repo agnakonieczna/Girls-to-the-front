@@ -28,6 +28,7 @@ export const Logo = styled.p`
   z-index: 2;
   font-size: 1.6rem;
   cursor: pointer;
+  position: relative;
 
   &:focus {
     text-decoration: none;
@@ -68,3 +69,22 @@ export const MobileWrapper = styled.div`
     display: none;
   }
 `;
+
+
+export const StyledSocialMediaIcons = styled.div`
+  @media (min-width: 768px) {
+    align-items: center;
+    position: unset;
+    transform: unset;
+    opacity: 1;
+    transition: unset;
+  }
+`;
+
+export const SocialMediaWrapper = styled.div`
+  display: none;
+
+  @media (min-width: 768px) {
+    display: flex;
+  }
+`

@@ -1,13 +1,17 @@
 import { useState } from 'react';
 import { useRouter } from 'next/router';
+import { AnimatePresence } from 'framer-motion';
+//styles
+import * as Style from './Header.style';
 import Hamburger from './Hamburger';
 import MobileMenu from './MobileMenu';
 import NavigationLinks from './NavigationLinks';
-import SocialMediaIcons from './SocialMediaIcons';
 import LangBtn from '../common/LangBtn';
 import FlexWrapper from '../common/FlexWrapper';
-//styles
-import * as Style from './Header.style';
+//assets
+import Instagram from '../../public/images/instagram.svg';
+import Facebook from '../../public/images/facebook.svg';
+
 
 const Header = ({ handleOverflow }) => {
   const router = useRouter();
@@ -38,12 +42,32 @@ const Header = ({ handleOverflow }) => {
             </Style.NavList>
           </Style.Nav>
         </FlexWrapper>
-        <SocialMediaIcons header />
+        <Style.SocialMediaWrapper>
+          <LangBtn />
+          <Style.StyledSocialMediaIcons>
+            <a
+              href='https://www.instagram.com/girlstothefront_/'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <Instagram />
+            </a>
+            <a
+              href='https://www.facebook.com/allgirlstothefront/'
+              target='_blank'
+              rel='noopener noreferrer'
+            >
+              <Facebook />
+            </a>
+          </Style.StyledSocialMediaIcons>
+        </Style.SocialMediaWrapper>
         <Style.MobileWrapper>
           <LangBtn />
           <Hamburger menuOpen={menuOpen} handleMenuOpen={handleMenuOpen} />
         </Style.MobileWrapper>
-        <MobileMenu menuOpen={menuOpen} handleMenuOpen={handleMenuOpen} />
+        <AnimatePresence>
+          {menuOpen && <MobileMenu menuOpen={menuOpen} handleMenuOpen={handleMenuOpen} />}
+        </AnimatePresence>
       </Style.HeaderWrapper>
     </Style.StyledHeader>
   );

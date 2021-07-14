@@ -25,7 +25,7 @@ const ContactInfo = () => {
         <Image src={photo} alt='' width={465} height={371} priority={true}/>
       </ImageWrapper>
       <RedCircle top='-10%' left='-50%' toptablet='-25%' />
-      <BlueCircle top='30%' right='-50%' toptablet='10%' />
+      <BlueCircle top='70%' right='-50%' toptablet='10%' />
       <RedCircle top='90%' left='-10%' toptablet='100%' />
     </FlexWrapper>
   );
