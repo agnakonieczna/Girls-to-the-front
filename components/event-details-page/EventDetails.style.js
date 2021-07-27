@@ -28,3 +28,10 @@ export const TextParagraph = styled.p`
     line-height: 3.5rem;
   }
 `;
+
+export const StyledLink = styled.a`
+  position: relative;
+  font-size: 1.5rem;
+  padding: 1rem 0;
+  cursor: pointer;
+`;

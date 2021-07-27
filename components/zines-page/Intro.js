@@ -27,7 +27,7 @@ const ZineIntro = () => {
   return (
     <>
       <FlexWrapper bottom>
-        <ImageWrapper marginRight>
+        <ImageWrapper marginRight initial={{opacity: 0}} animate={{opacity: 1, transition: {delay: 1, duration: 0.5}}}>
           <Image src={zines} width={548} height={504} alt='G*TTF zines laying on the floor' priority={true} />
         </ImageWrapper>
         {pageContent[language].first}

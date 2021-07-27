@@ -18,8 +18,7 @@ const GeneralInfo = () => {
   return (
     <Container>
       <RedCircle top='0' left='-50%' />
-      <Section>
-        <FlexWrapper align='start' top bottom>
+        <FlexWrapper align='start' bottom>
           {pageContent[language].first}
           <ImageWrapper marginLeft initial={{opacity: 0}} animate={{opacity: 1, transition: {delay: 1, duration: 0.5}}}>
             <Image
@@ -32,7 +31,6 @@ const GeneralInfo = () => {
           </ImageWrapper>
         </FlexWrapper>
         {pageContent[language].second}
-      </Section>
     </Container>
   );
 };

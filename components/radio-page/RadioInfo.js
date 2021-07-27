@@ -19,7 +19,7 @@ const RadioInfo = () => {
     <Container>
       <FlexWrapper>
         <TextWrapper>{radioContent[language].first}</TextWrapper>
-        <ImageWrapper marginLeft>
+        <ImageWrapper marginLeft initial={{opacity: 0}} animate={{opacity: 1, transition: {delay: 1, duration: 0.5}}}>
           <Image src={photo} alt='Radio kapitał' width={428} height={360} priority={true} />
         </ImageWrapper>
       </FlexWrapper>

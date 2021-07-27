@@ -4,13 +4,15 @@ import Container from '../common/Container';
 import BlueCircle from '../common/BlueCircle';
 import RedCircle from '../common/RedCircle';
 import CustomImage from '../common/CustomImage';
+import Link from 'next/link';
+
 //styles
-import { EventTitle, EventDate, TextParagraph } from './EventDetails.style';
+import { EventTitle, EventDate, TextParagraph, StyledLink } from './EventDetails.style';
 
 const options = {
   renderNode: {
-    [BLOCKS.PARAGRAPH]: (node, children) => <TextParagraph>{children}</TextParagraph>,
-  },
+    [BLOCKS.PARAGRAPH]: (node, children) => <TextParagraph>{children}</TextParagraph>
+  }
 };
 
 const EventDetails = ({ selectedEvent }) => {
@@ -18,6 +20,9 @@ const EventDetails = ({ selectedEvent }) => {
 
   return (
     <Container>
+      <Link href='/'>
+        <StyledLink>Wróć</StyledLink>
+      </Link>
       <CustomImage
         src={'https:' + image.fields.file.url}
         alt={title}

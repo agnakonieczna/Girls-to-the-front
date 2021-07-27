@@ -16,6 +16,7 @@ const ImageWrapper = styled(motion.div)`
     position: ${({absolute}) => absolute && 'absolute'};
     top: ${({ top }) => top};
     left: ${({ left }) => left};
+    max-width: 60rem;
   }
 `;
 

@@ -4,6 +4,7 @@ import Slide from './Slide';
 import Container from '../../common/Container';
 import FlexWrapper from '../../common/FlexWrapper';
 import { Swiper, SwiperSlide } from 'swiper/react';
+import CustomImage from '../../common/CustomImage';
 import SwiperCore, { Navigation, Pagination, Autoplay } from 'swiper';
 import 'swiper/swiper-bundle.css';
 import slider1 from '../../../public/images/slider-1.png';
@@ -15,9 +16,8 @@ import slider6 from '../../../public/images/slider-6.png';
 import slider7 from '../../../public/images/slider-7.png';
 import slider8 from '../../../public/images/slider-8.png';
 import slider9 from '../../../public/images/slider-9.png';
-import Image from 'next/image';
-
 import ArrowSvg from '../../../public/images/arrow.svg';
+
 
 SwiperCore.use([Navigation, Pagination, Autoplay]);
 
@@ -136,19 +136,19 @@ const Slider = () => {
       <ImagesWrapper>
         <Container>
           <FlexWrapper bottom>
-            <Image src={slider1} width={206} height={309} alt='Ania and Amina from the band Cudowne Lata'/>
-            <Image src={slider2} width={382} height={298} alt="Order of the Rainbow Girls' gig"/>
-            <Image src={slider3} width={274} height={314} alt='SVET'/>
+            <CustomImage src={slider1} width={206} height={309} alt='Ania and Amina from the band Cudowne Lata'/>
+            <CustomImage src={slider2} width={382} height={298} alt="Order of the Rainbow Girls' gig"/>
+            <CustomImage src={slider3} width={274} height={314} alt='SVET'/>
           </FlexWrapper>
           <FlexWrapper bottom>
-            <Image src={slider4} width={268} height={179} alt='Singer Dubais'/>
-            <Image src={slider5} width={296} height={197} alt='Group of people on concert'/>
-            <Image src={slider6} width={299} height={200} alt='Agus during her gig'/>
+            <CustomImage src={slider4} width={268} height={179} alt='Singer Dubais'/>
+            <CustomImage src={slider5} width={296} height={197} alt='Group of people on concert'/>
+            <CustomImage src={slider6} width={299} height={200} alt='Agus during her gig'/>
           </FlexWrapper>
           <FlexWrapper>
-            <Image src={slider7} width={308} height={205} alt='Maja Luxenberg singing'/>
-            <Image src={slider8} width={178} height={215} alt='Satin de Compostela gig'/>
-            <Image src={slider9} width={312} height={208} alt='Emoji face'/>
+            <CustomImage src={slider7} width={308} height={205} alt='Maja Luxenberg singing'/>
+            <CustomImage src={slider8} width={178} height={215} alt='Satin de Compostela gig'/>
+            <CustomImage src={slider9} width={312} height={208} alt='Emoji face'/>
           </FlexWrapper>
         </Container>
       </ImagesWrapper>

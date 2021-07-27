@@ -31,7 +31,7 @@ export default class MyDocument extends Document {
     return (
       <Html>
         <Head>
-          <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+          <link rel='preconnect' href='https://fonts.gstatic.com' crossOrigin='anonymous' />
           <link
             rel='preload'
             as='style'
@@ -53,13 +53,6 @@ export default class MyDocument extends Document {
             rel='preload'
             as='font'
             href='/fonts/MonumentExtended-Black.woff2'
-            type='font/woff2'
-            crossOrigin='anonymous'
-          />
-          <link
-            rel='preload'
-            as='font'
-            href='/fonts/MonumentExtended-Light.woff2'
             type='font/woff2'
             crossOrigin='anonymous'
           />

@@ -21,7 +21,7 @@ const ContactInfo = () => {
           <Fragment key={index}>{paragraph}</Fragment>
         ))}
       </TextWrapper>
-      <ImageWrapper marginLeft>
+      <ImageWrapper marginLeft initial={{opacity: 0}} animate={{opacity: 1, transition: {delay: 1, duration: 0.5}}} >
         <Image src={photo} alt='Ola Kamińska and Agata Wnuk in front of grafitti' width={465} height={371} priority={true}/>
       </ImageWrapper>
       <RedCircle top='-10%' left='-50%' toptablet='-25%' />
