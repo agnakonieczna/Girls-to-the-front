@@ -8,7 +8,7 @@ export const StyledHamburger = styled.button`
   padding: 1.5rem;
   cursor: pointer;
 
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     display: none;
   }
 `;

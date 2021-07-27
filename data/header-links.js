@@ -5,6 +5,10 @@ const headerLinks = {
         text: 'O nas',
       },
       {
+        href: '/media',
+        text: 'Media',
+      },
+      {
         href: '/zines',
         text: 'Ziny',
       },
@@ -25,6 +29,10 @@ const headerLinks = {
       {
         href: '/about',
         text: 'About',
+      },
+      {
+        href: '/media',
+        text: 'Media',
       },
       {
         href: '/zines',

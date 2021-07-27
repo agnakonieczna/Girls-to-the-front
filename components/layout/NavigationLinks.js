@@ -14,7 +14,7 @@ const NavigationList = ({ shopLinkClicked, toggleShopListVisibility, handleMenuC
   return (
     <>
       {links[language].map((link, index) => {
-        if (index === 3 && language === 'PL') {
+        if (index === 4 && language === 'PL') {
           return (
             <NavListItem key={link.href} shop>
               <StyledLink
@@ -45,7 +45,7 @@ const NavigationList = ({ shopLinkClicked, toggleShopListVisibility, handleMenuC
               </ShopList>
             </NavListItem>
           );
-        } else if (index === 3 && language === 'EN') {
+        } else if (index === 4 && language === 'EN') {
           return (
             <NavListItem key={link.href} onClick={handleMenuClose ? handleMenuClose : null}>
               <StyledLink

@@ -27,7 +27,7 @@ export const SocialMediaIcons = styled(motion.div)`
   bottom: 10%;
   left: 50%;
 
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     display: none;
   }
 `;

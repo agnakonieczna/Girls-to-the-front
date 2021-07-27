@@ -1,3 +1,4 @@
+import zine0 from '../public/images/zine-0.png';
 import zine1 from '../public/images/zine-1.png';
 import zine2 from '../public/images/zine-2.png';
 import zine3 from '../public/images/zine-3.png';
@@ -12,14 +13,27 @@ import zine10 from '../public/images/zine-10.png';
 const zinesData = {
   PL: [
     {
-      id: 1,
-      title: 'Queer Erotica Zina (numer specjalny, 2020)',
+      id: 0,
+      title: '#10 Konflikt / Conflict (2021)',
       description:
-        'Queer Erotica Zina (numer specjalny, 2020 Zin z queerową erotyką to poboczny projekt Girls to the Front: zaczęłyśmy nad nim pracować w trakcie przymusowego siedzenia w domu, szukając chociaż chwilowej ucieczki od rzeczywistości, którą czułyśmy się przytłoczone. W środku znajdują się erotyczne opowiadania, komiksy i ilustracje stworzone przede wszystkim przez osoby, które identyfikują się jako queerowe kobiety i dziewczyny, osoby trans, niebinarne, genderqueer i interseksualne. Osoby współtworzące zina to m.in. Ania Chlebowska, Ju Aichinger, deadly firend, Klementyna Epa, Cara Hoffman, javvie, P.P. Lloyd, Daga Neonowa, Magdalena Siemieniako, sebulec, Viki Vaki, Joanna Wardzyńska. Zin w całości dostępny jest po polsku i po angielsku.',
+       'Większość prac w zinie bezpośrednio odnosi się do kluczowych wydarzeń z 2020 roku: queerowych i feministycznych protestów. Nie ograniczyłyśmy tematu zina tylko do sytuacji w Polsce. Od historii o deportacji i aktywizmie, przez eseje o wypaleniu i dorastaniu w wierze katolickiej, po opowiadania o intergalaktycznych dylematach, 50 osób współtworzących zina przygląda się konfliktowi z wielu perspektyw. W środku: komiksy (Alin Szewczyk, Magdalena Rzepecka), poezja (m.in. Marta Mitek, Maria Halber, Agnieszka Frankowska, Łaja Szkło), ilustracje (m.in. Maras Jezior, Oasis of Hate, Kaja Kochnowicz, Małgorztaa Mycek, Mira Larysz, Patricia Puentes), zdjęcia (m.in. Katarzna Szenajch, Ewa Szatybełko), proza (m.in. Eliza Rose, Undine Sommer), eseje (Alex Freiheit, Gabe), wywiady (z kolektywem Szpila).',
+      img: {
+        src: zine0,
+        width: 372,
+        height: 513,
+        alt: 'Cover of G*TTF#10 zine'
+      },
+    },
+    {
+      id: 1,
+      title: 'Queer Erotica Zin (numer specjalny, 2020)',
+      description:
+        'Zin z queerową erotyką to poboczny projekt G*irls to the Front: zaczęłyśmy nad nim pracować w trakcie przymusowego siedzenia w domu, szukając chociaż chwilowej ucieczki od rzeczywistości, którą czułyśmy się przytłoczone. W środku znajdują się erotyczne opowiadania, komiksy i ilustracje stworzone przede wszystkim przez osoby, które identyfikują się jako queerowe kobiety i dziewczyny, osoby trans, niebinarne, genderqueer i interseksualne. Osoby współtworzące zina to m.in. Ania Chlebowska, Ju Aichinger, deadly firend, Klementyna Epa, Cara Hoffman, javvie, P.P. Lloyd, Daga Neonowa, Magdalena Siemieniako, sebulec, Viki Vaki, Joanna Wardzyńska. Zin w całości dostępny jest po polsku i po angielsku.',
       img: {
         src: zine1,
         width: 339,
         height: 476,
+        alt: 'Cover of Queer Erotica zine'
       },
     },
     {
@@ -31,6 +45,7 @@ const zinesData = {
         src: zine2,
         width: 325,
         height: 461,
+        alt: 'Cover of G*TTF#9 zine'
       },
     },
     {
@@ -42,6 +57,7 @@ const zinesData = {
         src: zine3,
         width: 333,
         height: 471,
+        alt: 'Cover of G*TTF#8 zine'
       },
     },
     {
@@ -53,6 +69,7 @@ const zinesData = {
         src: zine4,
         width: 323,
         height: 454,
+        alt: 'Cover of G*TTF#7 zine'
       },
     },
     {
@@ -64,6 +81,7 @@ const zinesData = {
         src: zine5,
         width: 257,
         height: 365,
+        alt: 'Cover of G*TTF#6 zine'
       },
     },
     {
@@ -75,6 +93,7 @@ const zinesData = {
         src: zine6,
         width: 259,
         height: 370,
+        alt: 'Cover of G*TTF#5 zine'
       },
     },
     {
@@ -86,6 +105,7 @@ const zinesData = {
         src: zine7,
         width: 257,
         height: 372,
+        alt: 'Cover of G*TTF#4 zine'
       },
     },
     {
@@ -97,6 +117,7 @@ const zinesData = {
         src: zine8,
         width: 260,
         height: 373,
+        alt: 'Cover of G*TTF#3 zine'
       },
     },
     {
@@ -108,6 +129,7 @@ const zinesData = {
         src: zine9,
         width: 253,
         height: 362,
+        alt: 'Cover of G*TTF#2 zine'
       },
     },
     {
@@ -119,10 +141,23 @@ const zinesData = {
         src: zine10,
         width: 254,
         height: 367,
+        alt: 'Cover of G*TTF#1 zine'
       },
     },
   ],
   EN: [
+    {
+      id: 0,
+      title: '#10 Konflikt / Conflict (2021)',
+      description:
+       'The majority of the works focus on the events that shaped the year 2020 in Poland: queer and feminist protests and demonstrations. But we have not limited the theme of the zine to Poland’s situation only: from narratives on deportations and activism, through essays on burnout and growing up Catholic, to stories about intergalactic dilemmas, artists and writers examine the theme from numerous perspectives. Inside you will find: comics (Alin Szewczyk, Magdalena Rzepecka), poetry (Marta Mitek, Maria Halber, Agnieszka Frankowska, Łaja Szkło, and others), illustrations (Maras Jezior, Oasis of Hate, Kaja Kochnowicz, Małgorztaa Mycek, Mira Larysz, Patricia Puentes, and others), photography (Katarzna Szenajch, Ewa Szatybełko, and others), short stories (Eliza Rose, Undine Sommer), personal essays (Alex Freiheit, Gabe, and others), interviews.',
+      img: {
+        src: zine0,
+        width: 372,
+        height: 513,
+        alt: 'Cover of G*TTF#10 zine'
+      },
+    },
     {
       id: 1,
       title: 'Queer Erotica Zina (special issue, 2020)',
@@ -132,6 +167,7 @@ const zinesData = {
         src: zine1,
         width: 339,
         height: 476,
+        alt: 'Cover of Queer Erotica zine'
       },
     },
     {
@@ -143,6 +179,7 @@ const zinesData = {
         src: zine2,
         width: 325,
         height: 461,
+        alt: 'Cover of G*TTF#9 zine'
       },
     },
   ],

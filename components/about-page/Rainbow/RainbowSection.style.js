@@ -30,7 +30,7 @@ export const RainbowBackground = styled(motion.div)`
   
   @media (min-width: 1024px) {
     top: -10%;
-    height: 50rem;
+    height: 45rem;
   }
 `;
 

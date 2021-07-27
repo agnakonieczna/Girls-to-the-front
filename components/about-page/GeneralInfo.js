@@ -21,10 +21,10 @@ const GeneralInfo = () => {
       <Section>
         <FlexWrapper align='start' top bottom>
           {pageContent[language].first}
-          <ImageWrapper marginLeft>
+          <ImageWrapper marginLeft initial={{opacity: 0}} animate={{opacity: 1, transition: {delay: 1, duration: 0.5}}}>
             <Image
               src={photo}
-              alt='Agata Wnuk i Ola Kamińska'
+              alt='Agata Wnuk and Ola Kamińska on stairs'
               width={532}
               height={612}
               priority={true}

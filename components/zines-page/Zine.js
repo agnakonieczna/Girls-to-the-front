@@ -66,7 +66,7 @@ const Zine = ({ id, title, description, img}) => {
         <Title id={id}>{title}</Title>
         <Paragraph id={id}>{description}</Paragraph>
       </Description>
-      <CustomImage src={img.src} width={img.width} height={img.height} />
+      <CustomImage src={img.src} width={img.width} height={img.height} alt={img.alt}/>
       {id % 2 === 0 && <RedCircle />}
       {id % 2 !== 0 && <BlueCircle />}
     </Item>

@@ -22,15 +22,15 @@ import ArrowSvg from '../../../public/images/arrow.svg';
 SwiperCore.use([Navigation, Pagination, Autoplay]);
 
 const sliderData = [
-  { id: 1, img: slider1, alt: '' },
-  { id: 2, img: slider2, alt: '' },
-  { id: 3, img: slider3, alt: '' },
-  { id: 4, img: slider4, alt: '' },
-  { id: 5, img: slider5, alt: '' },
-  { id: 6, img: slider6, alt: '' },
-  { id: 7, img: slider7, alt: '' },
-  { id: 8, img: slider8, alt: '' },
-  { id: 9, img: slider9, alt: '' }
+  { id: 1, img: slider1, alt: 'Ania and Amina from the band Cudowne Lata' },
+  { id: 2, img: slider2, alt: "Order of the Rainbow Girls' gig"},
+  { id: 3, img: slider3, alt: 'SVET' },
+  { id: 4, img: slider4, alt: 'Singer Dubais' },
+  { id: 5, img: slider5, alt: 'Group of people on concert' },
+  { id: 6, img: slider6, alt: 'Agus during her gig' },
+  { id: 7, img: slider7, alt: 'Maja Luxenberg singing' },
+  { id: 8, img: slider8, alt: 'Satin de Compostela gig' },
+  { id: 9, img: slider9, alt: 'Emoji face' }
 ];
 
 const Arrow = styled.button`
@@ -136,19 +136,19 @@ const Slider = () => {
       <ImagesWrapper>
         <Container>
           <FlexWrapper bottom>
-            <Image src={slider1} width={206} height={309} alt=''/>
-            <Image src={slider2} width={382} height={298} alt=''/>
-            <Image src={slider3} width={274} height={314} alt=''/>
+            <Image src={slider1} width={206} height={309} alt='Ania and Amina from the band Cudowne Lata'/>
+            <Image src={slider2} width={382} height={298} alt="Order of the Rainbow Girls' gig"/>
+            <Image src={slider3} width={274} height={314} alt='SVET'/>
           </FlexWrapper>
           <FlexWrapper bottom>
-            <Image src={slider4} width={268} height={179} alt=''/>
-            <Image src={slider5} width={296} height={197} alt=''/>
-            <Image src={slider6} width={299} height={200} alt=''/>
+            <Image src={slider4} width={268} height={179} alt='Singer Dubais'/>
+            <Image src={slider5} width={296} height={197} alt='Group of people on concert'/>
+            <Image src={slider6} width={299} height={200} alt='Agus during her gig'/>
           </FlexWrapper>
           <FlexWrapper>
-            <Image src={slider7} width={308} height={205} alt=''/>
-            <Image src={slider8} width={178} height={215} alt=''/>
-            <Image src={slider9} width={312} height={208} alt=''/>
+            <Image src={slider7} width={308} height={205} alt='Maja Luxenberg singing'/>
+            <Image src={slider8} width={178} height={215} alt='Satin de Compostela gig'/>
+            <Image src={slider9} width={312} height={208} alt='Emoji face'/>
           </FlexWrapper>
         </Container>
       </ImagesWrapper>

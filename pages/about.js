@@ -21,7 +21,6 @@ const About = () => {
       <Concerts />
       <Slider />
       <AboutUs />
-      <Media />
       <ScrollToTop />
     </PageWrapper>
   );

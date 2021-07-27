@@ -8,7 +8,6 @@ export default createGlobalStyle`
         url('fonts/MonumentExtended-Regular.woff2') format('woff2');
         font-weight: 400;
         font-style: normal;
-        font-display: swap;
     }
 
     @font-face {
@@ -18,7 +17,6 @@ export default createGlobalStyle`
         url('fonts/MonumentExtended-Light.woff2') format('woff2');
         font-weight: 300;
         font-style: normal;
-        font-display: swap;
     }
 
     @font-face {
@@ -28,6 +26,5 @@ export default createGlobalStyle`
         url('fonts/MonumentExtended-Black.woff2') format('woff2');
         font-weight: 700;
         font-style: normal;
-        font-display: swap;
     }
 `;

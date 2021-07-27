@@ -28,7 +28,7 @@ const ZineIntro = () => {
     <>
       <FlexWrapper bottom>
         <ImageWrapper marginRight>
-          <Image src={zines} width={548} height={504} alt='' priority={true} />
+          <Image src={zines} width={548} height={504} alt='G*TTF zines laying on the floor' priority={true} />
         </ImageWrapper>
         {pageContent[language].first}
       </FlexWrapper>
@@ -38,9 +38,9 @@ const ZineIntro = () => {
       <FlexWrapper align='start'>
         {pageContent[language].third}
         <ImagesWrapper>
-          <CustomImage src={zineOne} alt='' width={318} height={212} marginBottom='2rem' />
-          <CustomImage src={zineTwo} alt='' width={318} height={212} marginBottom='2rem' />
-          <CustomImage src={zineThree} alt='' width={316} height={211} marginBottom='2rem' />
+          <CustomImage src={zineOne} alt='Two pages from G*TTFxUNSOUND zine' width={318} height={212} marginBottom='2rem' />
+          <CustomImage src={zineTwo} alt='Two pages from G*TTF#8 zine' width={318} height={212} marginBottom='2rem' />
+          <CustomImage src={zineThree} alt='Two pages from G*TTF#9: Future zine' width={316} height={211} marginBottom='2rem' />
         </ImagesWrapper>
       </FlexWrapper>
     </>

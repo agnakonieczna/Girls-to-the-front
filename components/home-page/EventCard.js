@@ -32,7 +32,7 @@ const EventCard = ({ event }) => {
     >
       <EventContentWrapper>
         <EventTitle>{title}</EventTitle>
-        <EventText>{textPreview}...</EventText>
+        <EventText>{textPreview}</EventText>
         <FlexWrapper>
           <EventDate>{date}</EventDate>
           <EventButton>

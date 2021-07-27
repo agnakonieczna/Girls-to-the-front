@@ -1,0 +1,9 @@
+{
+  "routes": [
+    {
+      "src": "/styles/GlobalFonts.js",
+      "headers": { "cache-control": "s-maxage=604800" },
+      "dest": "/fonts/$1"
+    }
+  ]
+}

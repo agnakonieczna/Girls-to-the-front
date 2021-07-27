@@ -35,12 +35,12 @@ const AboutUs = () => {
                 align='end'
                 marginRight
                 src={girlsDjsTwo}
-                alt=''
+                alt='Ola Kamińska and Agata Wnuk playing their dj set'
                 width={347}
                 height={232}
               />
             </Wrapper>
-            <CustomImage width='20%' src={girlsDjsOne} alt='' width={279} height={420} />
+            <CustomImage width='20%' src={girlsDjsOne} alt='Ola Kamińska and Agata Wnuk playing their dj set' width={279} height={420} />
           </FlexWrapper>
         </Section>
         <Section bigMargin>
@@ -50,7 +50,7 @@ const AboutUs = () => {
               <CustomImage
                 src={zinesOne}
                 absolute
-                alt=''
+                alt='Ola Kamińska and Agata Wnuk with Queer Erotica Zin'
                 width={282}
                 height={184}
                 top='0'
@@ -59,7 +59,7 @@ const AboutUs = () => {
               <CustomImage
                 src={zinesTwo}
                 absolute
-                alt=''
+                alt='The first page of G*TTF: Future zine'
                 width={242}
                 height={190}
                 top='48%'
@@ -70,14 +70,14 @@ const AboutUs = () => {
         </Section>
         <Section>
           <FlexWrapper align='start'>
-            <CustomImage src={workshop} width={283} height={213} alt='' marginRight/>
+            <CustomImage src={workshop} width={283} height={213} alt='Mini zines and materials for zine workshop' marginRight/>
             {pageContent[language].ten}
           </FlexWrapper>
         </Section>
       </Container>
       <Section flex>
         <FlexWrapper>
-          <CustomImage src={poster} width={254} height={382} alt=''/>
+          <CustomImage src={poster} width={254} height={382} alt='Purple textile with slogan'/>
           {pageContent[language].eleven}
         </FlexWrapper>
       </Section>

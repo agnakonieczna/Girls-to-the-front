@@ -21,7 +21,6 @@ export default function App({ Component, pageProps, router }) {
 
   return (
     <Wrapper>
-      <GlobalFonts />
       <GlobalStyle overflow={overflow} />
       <ThemeProvider theme={theme}>
         <Layout handleOverflow={handleOverflow}>

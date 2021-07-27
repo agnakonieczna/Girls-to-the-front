@@ -25,7 +25,7 @@ const Team = () => {
       <BlueCircle top='800px' left='0' />
       <Section>
         <FlexWrapper>
-          <CustomImage marginRight src={demonstration} width={321} height={370} alt='' />
+          <CustomImage marginRight src={demonstration} width={321} height={370} alt='Ola Kamińska and Agata Wnuk during a protest.' />
           {pageContent[language].four}
         </FlexWrapper>
       </Section>
@@ -34,9 +34,9 @@ const Team = () => {
         <FlexWrapper align='start'>
           {pageContent[language].six}
           <TeamImagesWrapper>
-            <CustomImage src={magdalena} height={366} width={372} alt='' />
-            <CustomImage src={maja} height={326} width={353} alt='' />
-            <CustomImage src={katarzyna} height={390} width={410} alt='' />
+            <CustomImage src={magdalena} height={366} width={372} alt='Magdalena Rzepecka' />
+            <CustomImage src={maja} height={326} width={353} alt='Maja Demska' />
+            <CustomImage src={katarzyna} height={390} width={410} alt='Kasia Szenajch' />
           </TeamImagesWrapper>
         </FlexWrapper>
       </Section>

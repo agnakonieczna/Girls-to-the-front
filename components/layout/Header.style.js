@@ -38,7 +38,7 @@ export const Logo = styled.p`
 export const Nav = styled.nav`
   display: none;
 
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     display: block;
   }
 `;
@@ -55,7 +55,7 @@ export const NavList = styled.ul`
 export const SocialMediaIcons = styled.div`
   display: none;
 
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     display: flex;
     align-items: center;
   }
@@ -65,14 +65,14 @@ export const MobileWrapper = styled.div`
   display: flex;
   align-items: center;
 
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     display: none;
   }
 `;
 
 
 export const StyledSocialMediaIcons = styled.div`
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     align-items: center;
     position: unset;
     transform: unset;
@@ -84,7 +84,7 @@ export const StyledSocialMediaIcons = styled.div`
 export const SocialMediaWrapper = styled.div`
   display: none;
 
-  @media (min-width: 768px) {
+  @media (min-width: 1024px) {
     display: flex;
   }
 `

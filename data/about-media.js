@@ -4,6 +4,16 @@ import Bold from '../components/common/Bold';
 const aboutMedia = {
   PL: [
     <Paragraph pink>
+      <a
+        href='https://www.calvertjournal.com/features/show/12874/girls-to-the-front-feminist-collective-polish-project'
+        target='_blank'
+        rel='noopener noreferrer'
+      >
+        ➽ Calvert Journal: Girls to the Front is the feminist collective making resistance about
+        more than just protest (EN, 2021)
+      </a>
+    </Paragraph>,
+    <Paragraph pink>
       ➽<Bold>34minus1</Bold> Magazine Issue#2: Girls to the Front (wywiad) (EN, 2021)
     </Paragraph>,
     <Paragraph pink>
@@ -40,9 +50,19 @@ const aboutMedia = {
     </Paragraph>,
     <Paragraph pink>
       ➽ <Bold>i-D Poland</Bold>: Premiera 4. numeru Girls to the Front (wywiad) (2017)
-    </Paragraph>,
+    </Paragraph>
   ],
   EN: [
+    <Paragraph pink>
+      <a
+        href='https://www.calvertjournal.com/features/show/12874/girls-to-the-front-feminist-collective-polish-project'
+        target='_blank'
+        rel='noopener noreferrer'
+      >
+        ➽ Calvert Journal: Girls to the Front is the feminist collective making resistance about
+        more than just protest (EN, 2021)
+      </a>
+    </Paragraph>,
     <Paragraph pink>
       ➽ <Bold>34minus1 Magazine</Bold> Issue#2: Girls to the Front (EN, 2021){' '}
     </Paragraph>,
@@ -81,8 +101,8 @@ const aboutMedia = {
     </Paragraph>,
     <Paragraph pink>
       ➽ <Bold>i-D Poland</Bold>: Premiera 4. numeru Girls to the Front (wywiad) (2017)
-    </Paragraph>,
-  ],
+    </Paragraph>
+  ]
 };
 
 export default aboutMedia;
