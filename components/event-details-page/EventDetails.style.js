@@ -29,9 +29,20 @@ export const TextParagraph = styled.p`
   }
 `;
 
-export const StyledLink = styled.a`
-  position: relative;
-  font-size: 1.5rem;
-  padding: 1rem 0;
+export const Arrow = styled.div`
+  width: fit-content;
   cursor: pointer;
+
+  svg {
+    width: 20px;
+    height: 50px;
+    stroke: ${({ theme }) => theme.colors.black};
+    stroke-width: 2px;
+    transform: translate(1.5rem, 0) rotate(-90deg);
+
+    @media (min-width: 768px) {
+      width: 40px;
+      height: 80px;
+    }
+  }
 `;

@@ -49,26 +49,29 @@ const ImageWrapper = styled.div`
   }
 `;
 
-const Image = styled.img`
-  width: 100%;
-`;
-
 const Description = styled.div`
   @media (min-width: 768px) {
     width: 56%;
   }
 `;
 
-const Zine = ({ id, title, description, img}) => {
+const Zine = ({ id, title, description, img }) => {
   return (
     <Item id={id}>
       <Description>
         <Title id={id}>{title}</Title>
         <Paragraph id={id}>{description}</Paragraph>
       </Description>
-      <CustomImage src={img.src} width={img.width} height={img.height} alt={img.alt}/>
-      {id % 2 === 0 && <RedCircle />}
-      {id % 2 !== 0 && <BlueCircle />}
+      <CustomImage
+        src={img.src}
+        width={img.width}
+        height={img.height}
+        alt={img.alt}
+        marginRight={id % 2 === 0}
+        marginLeft={id % 2 !== 0}
+      />
+      {id % 2 !== 0 && <RedCircle />}
+      {id % 2 === 0 && <BlueCircle />}
     </Item>
   );
 };

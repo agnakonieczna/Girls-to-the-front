@@ -103,7 +103,7 @@ const zinesIntro = {
         events.{' '}
         <Bold>
           When organizing the events, we focus primarily on the local communities, while through
-          <Italic>Girls* to the Front</Italic> zines, we aim to build an international community
+          <Italic>Girls* to the Front</Italic>{' '}zines, we aim to build an international community
         </Bold>
         . Our zines feature works created by people from numerous countries: the United States,
         Great Britain, Russia, Turkey, or Germany. We have sent the finished zin to both small towns

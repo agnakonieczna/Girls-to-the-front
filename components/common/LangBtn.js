@@ -9,7 +9,7 @@ const StyledLangBtn = styled.button`
   font-weight: 700;
   padding: 1rem;
   cursor: pointer;
-  z-index: 2;
+  z-index: 4;
   position: relative;
 
   @media (min-width: 1024px) {

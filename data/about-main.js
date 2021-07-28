@@ -181,7 +181,14 @@ const aboutMain = {
           <li>
             <Paragraph blue>
               ➽ Razem z Trzema Szóstkami przygotowałyśmy przegląd dziewczyńskiego niezalu (
-              <a href='/'>Youtube</a>, 2019).
+              <a
+                traget='_blank'
+                rel='noopener noreferrer'
+                href='https://www.youtube.com/watch?v=bY2_Sr5AdOA'
+              >
+                Youtube
+              </a>
+              , 2019).
             </Paragraph>
           </li>
         </List>

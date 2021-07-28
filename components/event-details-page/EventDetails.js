@@ -5,9 +5,11 @@ import BlueCircle from '../common/BlueCircle';
 import RedCircle from '../common/RedCircle';
 import CustomImage from '../common/CustomImage';
 import Link from 'next/link';
-
+import { LanguageContext } from '../../context/LanguageContext';
+import ArrowSvg from '../../public/images/arrow.svg';
 //styles
-import { EventTitle, EventDate, TextParagraph, StyledLink } from './EventDetails.style';
+import { EventTitle, EventDate, TextParagraph, Arrow } from './EventDetails.style';
+import { useContext } from 'react';
 
 const options = {
   renderNode: {
@@ -17,11 +19,14 @@ const options = {
 
 const EventDetails = ({ selectedEvent }) => {
   const { image, title, date, text } = selectedEvent.fields;
+  const { language } = useContext(LanguageContext);
 
   return (
     <Container>
       <Link href='/'>
-        <StyledLink>Wróć</StyledLink>
+        <Arrow>
+          <ArrowSvg />
+        </Arrow>
       </Link>
       <CustomImage
         src={'https:' + image.fields.file.url}

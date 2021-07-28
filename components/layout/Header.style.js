@@ -25,7 +25,7 @@ export const Logo = styled.p`
   text-decoration: none;
   margin-right: 0.65rem;
   padding: 1rem 0;
-  z-index: 2;
+  z-index: 4;
   font-size: 1.6rem;
   cursor: pointer;
   position: relative;

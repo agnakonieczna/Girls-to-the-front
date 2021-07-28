@@ -28,7 +28,7 @@ const zinesData = {
       id: 1,
       title: 'Queer Erotica Zin (numer specjalny, 2020)',
       description:
-        'Zin z queerową erotyką to poboczny projekt G*irls to the Front: zaczęłyśmy nad nim pracować w trakcie przymusowego siedzenia w domu, szukając chociaż chwilowej ucieczki od rzeczywistości, którą czułyśmy się przytłoczone. W środku znajdują się erotyczne opowiadania, komiksy i ilustracje stworzone przede wszystkim przez osoby, które identyfikują się jako queerowe kobiety i dziewczyny, osoby trans, niebinarne, genderqueer i interseksualne. Osoby współtworzące zina to m.in. Ania Chlebowska, Ju Aichinger, deadly firend, Klementyna Epa, Cara Hoffman, javvie, P.P. Lloyd, Daga Neonowa, Magdalena Siemieniako, sebulec, Viki Vaki, Joanna Wardzyńska. Zin w całości dostępny jest po polsku i po angielsku.',
+        'Zin z queerową erotyką to poboczny projekt Girls* to the Front: zaczęłyśmy nad nim pracować w trakcie przymusowego siedzenia w domu, szukając chociaż chwilowej ucieczki od rzeczywistości, którą czułyśmy się przytłoczone. W środku znajdują się erotyczne opowiadania, komiksy i ilustracje stworzone przede wszystkim przez osoby, które identyfikują się jako queerowe kobiety i dziewczyny, osoby trans, niebinarne, genderqueer i interseksualne. Osoby współtworzące zina to m.in. Ania Chlebowska, Ju Aichinger, deadly firend, Klementyna Epa, Cara Hoffman, javvie, P.P. Lloyd, Daga Neonowa, Magdalena Siemieniako, sebulec, Viki Vaki, Joanna Wardzyńska. Zin w całości dostępny jest po polsku i po angielsku.',
       img: {
         src: zine1,
         width: 339,
@@ -88,7 +88,7 @@ const zinesData = {
       id: 6,
       title: '#5 Seks (2017)',
       description:
-        'W numerze GTTF poświęconym seksie Klaudia Mikłoszewska pisze o pierwszym razie, SealkySmooth o seksualnym kapitale, Dominika Komender i Anna Kurowicka o aseksualności, a Agnieszka Jęksa rozmawia z dr hab. Agnieszką Kościańską o edukacji seksualnej – i to tylko część tekstów, które znajdują się w zinie! W środku jest jeszcze sporo wywiadów, esejów, artykułów, wierszy i opowiadań. Wśród autorek ilustracji są Emma Dajska, Alicja Czyczel, Małgorzata Pawlak, Sophie le Roux, Ewa Obiedzińska i wiele innych.',
+        'W numerze G*TTF poświęconym seksie Klaudia Mikłoszewska pisze o pierwszym razie, SealkySmooth o seksualnym kapitale, Dominika Komender i Anna Kurowicka o aseksualności, a Agnieszka Jęksa rozmawia z dr hab. Agnieszką Kościańską o edukacji seksualnej – i to tylko część tekstów, które znajdują się w zinie! W środku jest jeszcze sporo wywiadów, esejów, artykułów, wierszy i opowiadań. Wśród autorek ilustracji są Emma Dajska, Alicja Czyczel, Małgorzata Pawlak, Sophie le Roux, Ewa Obiedzińska i wiele innych.',
       img: {
         src: zine6,
         width: 259,

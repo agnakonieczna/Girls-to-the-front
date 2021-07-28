@@ -4,7 +4,7 @@ export const StyledHamburger = styled.button`
   position: relative;
   background-color: transparent;
   border: none;
-  z-index: 2;
+  z-index: 4;
   padding: 1.5rem;
   cursor: pointer;
 

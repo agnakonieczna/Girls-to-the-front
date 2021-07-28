@@ -35,7 +35,7 @@ const Header = ({ handleOverflow }) => {
     >
       <Style.HeaderWrapper>
         <FlexWrapper justify='flex-start'>
-          <Style.Logo onClick={handleLogoClick}>GTTF</Style.Logo>
+          <Style.Logo onClick={handleLogoClick}>G*TTF</Style.Logo>
           <Style.Nav>
             <Style.NavList>
               <NavigationLinks />
