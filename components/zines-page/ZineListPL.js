@@ -1,6 +1,6 @@
 import { useContext } from 'react';
 import { LanguageContext } from '../../context/LanguageContext';
-import Zine from './Zine';
+import Zine from './Zine/Zine';
 //data
 import zinesData from '../../data/zines-data';
 

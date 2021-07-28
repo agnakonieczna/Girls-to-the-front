@@ -1,6 +1,6 @@
 import Container from '../components/common/Container';
-import Intro from '../components/zines-page/Intro';
-import ZineList from '../components/zines-page/ZineList';
+import Intro from '../components/zines-page/Intro/Intro';
+import ZineList from '../components/zines-page/ZineList/ZineList';
 import ScrollToTop from '../components/common/ScrollToTop';
 
 const Zines = () => {

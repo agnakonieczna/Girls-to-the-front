@@ -1,15 +1,16 @@
+import { useContext } from 'react';
 import { documentToReactComponents } from '@contentful/rich-text-react-renderer';
 import { BLOCKS } from '@contentful/rich-text-types';
+import Link from 'next/link';
+import { LanguageContext } from '../../context/LanguageContext';
+//styles
+import { EventTitle, EventDate, TextParagraph, Arrow } from './EventDetails.style';
 import Container from '../common/Container';
 import BlueCircle from '../common/BlueCircle';
 import RedCircle from '../common/RedCircle';
 import CustomImage from '../common/CustomImage';
-import Link from 'next/link';
-import { LanguageContext } from '../../context/LanguageContext';
+//assets
 import ArrowSvg from '../../public/images/arrow.svg';
-//styles
-import { EventTitle, EventDate, TextParagraph, Arrow } from './EventDetails.style';
-import { useContext } from 'react';
 
 const options = {
   renderNode: {

@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import { LanguageContext } from '../../context/LanguageContext';
 import styled from 'styled-components';
-import Zine from './Zine';
+import Zine from './Zine/Zine';
 //styles
 import Paragraph from '../common/Paragraph';
 import Bold from '../common/Bold';
@@ -45,7 +45,6 @@ const ZineListEN = () => {
           );
         })}
       </ul>
-      {language === 'EN' && (
         <>
           <ul>
             <li>
@@ -102,7 +101,6 @@ const ZineListEN = () => {
             <CustomImage src={zine10} width={177} height={250} marginBottom='2.5rem'/>
           </ZinesWrapper>
         </>
-      )}
     </>
   );
 };

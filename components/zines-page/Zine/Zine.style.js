@@ -1,10 +1,6 @@
 import styled from 'styled-components';
-//styles
-import BlueCircle from '../common/BlueCircle';
-import RedCircle from '../common/RedCircle';
-import CustomImage from '../common/CustomImage';
 
-const Title = styled.h2`
+export const Title = styled.h2`
   font-size: 1.8rem;
   font-family: 'Monument Extended Bold';
   -webkit-text-stroke: 0.9px black;
@@ -18,20 +14,21 @@ const Title = styled.h2`
   }
 `;
 
-const Paragraph = styled.p`
+export const Paragraph = styled.p`
   margin-bottom: 2rem;
   line-height: 30px;
-  -webkit-text-stroke: 0.9px black;
+  -webkit-text-stroke: 0.65px black;
   color: ${({ id, theme }) => (id % 2 === 0 ? theme.colors.blue : theme.colors.pink)};
 
   @media (min-width: 768px) {
     width: ${({ width }) => width};
     line-height: 35px;
     margin-bottom: ${({ margin }) => margin && '3rem'};
+    -webkit-text-stroke: 0.9px black;
   }
 `;
 
-const Item = styled.li`
+export const Item = styled.li`
   margin-bottom: 5rem;
 
   @media (min-width: 768px) {
@@ -43,37 +40,8 @@ const Item = styled.li`
   }
 `;
 
-const ImageWrapper = styled.div`
-  @media (min-width: 768px) {
-    width: 38%;
-  }
-`;
-
-const Description = styled.div`
+export const Description = styled.div`
   @media (min-width: 768px) {
     width: 56%;
   }
 `;
-
-const Zine = ({ id, title, description, img }) => {
-  return (
-    <Item id={id}>
-      <Description>
-        <Title id={id}>{title}</Title>
-        <Paragraph id={id}>{description}</Paragraph>
-      </Description>
-      <CustomImage
-        src={img.src}
-        width={img.width}
-        height={img.height}
-        alt={img.alt}
-        marginRight={id % 2 === 0}
-        marginLeft={id % 2 !== 0}
-      />
-      {id % 2 !== 0 && <RedCircle />}
-      {id % 2 === 0 && <BlueCircle />}
-    </Item>
-  );
-};
-
-export default Zine;

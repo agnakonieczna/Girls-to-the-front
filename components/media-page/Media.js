@@ -1,14 +1,14 @@
 import { useContext } from 'react';
-import { LanguageContext } from '../../../context/LanguageContext';
+import { LanguageContext } from '../../context/LanguageContext';
 //styles
-import Container from '../../common/Container';
-import RedCircle from '../../common/RedCircle';
-import BlueCircle from '../../common/BlueCircle';
+import Container from '../common/Container';
+import RedCircle from '../common/RedCircle';
+import BlueCircle from '../common/BlueCircle';
 import { MediaTitle, MediaList, MediaTitleBackground } from './Media.style';
 //data
-import pageContent from '../../../data/about-main';
-import mediaContent from '../../../data/about-media';
-import textsContent from '../../../data/about-texts';
+import pageContent from '../../data/about-main';
+import mediaContent from '../../data/about-media';
+import textsContent from '../../data/about-texts';
 
 
 const titleContainer = {

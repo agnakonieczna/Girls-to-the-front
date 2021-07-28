@@ -22,7 +22,7 @@ const ContactInfo = () => {
         ))}
       </TextWrapper>
       <ImageWrapper marginLeft initial={{opacity: 0}} animate={{opacity: 1, transition: {delay: 1, duration: 0.5}}} >
-        <Image src={photo} alt='Ola Kamińska and Agata Wnuk in front of grafitti' width={465} height={371} priority={true}/>
+        <Image src={photo} alt='Ola Kamińska and Agata Wnuk in front of grafitti' width={465} height={371}/>
       </ImageWrapper>
       <RedCircle top='-10%' left='-50%' toptablet='-25%' />
       <BlueCircle top='70%' right='-50%' toptablet='10%' />

@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 const ImageWrapper = styled(motion.div)`
   margin: 0 auto 2rem;
   width: fit-content;
+  position: relative;
 
   @media (min-width: 768px) {
     margin: 0 ${({ center }) => center && 'auto'};

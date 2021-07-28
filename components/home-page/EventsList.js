@@ -1,6 +1,6 @@
 import { useContext, useState, useEffect } from 'react';
 import { createClient } from 'contentful';
-import EventCard from './EventCard';
+import EventCard from './EventCard/EventCard';
 import { LanguageContext } from '../../context/LanguageContext';
 
 const EventsList = ({ eventsPL }) => {
