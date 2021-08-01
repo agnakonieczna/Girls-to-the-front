@@ -15,22 +15,20 @@ const titleContainer = {
       repeat: Infinity,
       repeatType: 'mirror',
       delay: 0.5
-    },
-  },
+    }
+  }
 };
 
-const ZineList = () => {
+const ZineList = ({ zinesPL, zinesEN }) => {
   const { language } = useContext(LanguageContext);
 
   return (
     <>
       <TitleWrapper>
-        <TitleBackground variants={titleContainer} initial='start' animate='pulse'/>
-        <Title>
-          {language === 'PL' ? 'Dotychczas ukazały się' : 'So far, we have published'}:
-        </Title>
+        <TitleBackground variants={titleContainer} initial='start' animate='pulse' />
+        <Title>{language === 'PL' ? 'Dotychczas ukazały się' : 'So far, we have published'}:</Title>
       </TitleWrapper>
-      {language === 'PL' ? <ZineListPL /> : <ZineListEN />}
+      {language === 'PL' ? <ZineListPL zines={zinesPL} /> : <ZineListEN zines={zinesEN} />}
       <RedCircle top='0' left='-50%' toptablet='0' />
     </>
   );

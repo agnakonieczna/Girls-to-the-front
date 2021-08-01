@@ -8,6 +8,7 @@ export const EventWrapper = styled(motion.div)`
   box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1), 0 1px 12px 2px rgba(0, 0, 0, 0.1);
   border-radius: 0.5rem;
   margin: 10rem auto;
+  cursor: pointer;
 
   display: flex;
   flex-direction: column;

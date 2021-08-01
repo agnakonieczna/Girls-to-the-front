@@ -41,7 +41,7 @@ export default class MyDocument extends Document {
             rel='stylesheet'
             href='https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap'
             media='print'
-            onload="this.media='all'"
+            onLoad="this.media='all'"
           />
           <noscript>
             <link

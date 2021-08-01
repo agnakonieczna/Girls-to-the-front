@@ -1,22 +1,18 @@
-import { useContext } from 'react';
-import { LanguageContext } from '../../context/LanguageContext';
 import Zine from './Zine/Zine';
-//data
-import zinesData from '../../data/zines-data';
 
-const ZineListPL = () => {
-  const { language } = useContext(LanguageContext);
-
+const ZineListPL = ({zines}) => {
   return (
     <ul>
-      {zinesData[language].map((zine) => {
+      {zines.map((zine) => {
         return (
           <Zine
-            key={zine.id + 'soi39widjri8'}
-            id={zine.id}
-            title={zine.title}
-            description={zine.description}
-            img={zine.img}
+            key={zine.sys.id}
+            id={zine.fields.id}
+            title={zine.fields.title}
+            description={zine.fields.text}
+            src={'https:' + zine.fields.cover.fields.file.url}
+            width={zine.fields.cover.fields.file.details.image.width}
+            height={zine.fields.cover.fields.file.details.image.height}
           />
         );
       })}

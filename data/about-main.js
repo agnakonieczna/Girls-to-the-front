@@ -5,7 +5,7 @@ import { List, ListWrapper, ListBackground } from '../components/common/List';
 import ArtistsWrapper from '../components/common/ArtistWrapper';
 import Link from 'next/link';
 
-// import CustomParagraph from '../components/common/CustomParagraph';
+import CustomParagraph from '../components/common/CustomParagraph';
 
 const listContainer = {
   start: { scale: 1 },
@@ -22,7 +22,7 @@ const listContainer = {
 const aboutMain = {
   PL: {
     first: (
-      <Paragraph width='38%'>
+      <CustomParagraph width='38%'>
         <Bold>
           Girls* to the Front to inicjatywa Agaty Wnuk i Oli Kamińskiej, działająca w Warszawie od
           2015 roku.
@@ -41,7 +41,7 @@ const aboutMain = {
           audycję w Radiu Kapitał
         </a>
         .
-      </Paragraph>
+      </CustomParagraph>
     ),
     second: (
       <Paragraph margin>
@@ -360,8 +360,10 @@ const aboutMain = {
                 href='https://radiokapital.pl/shows/girls-to-the-front'
                 target='_blank'
                 rel='noopener noreferrer'
-              ></a>
-              Radio Kapitał community radio.<a></a>
+              >
+                Radio Kapitał
+              </a>{' '}
+              community radio.
             </Paragraph>
           </li>
           <li>
@@ -371,8 +373,15 @@ const aboutMain = {
           </li>
           <li>
             <Paragraph blue>
-              ➽ Together with Trzy Szóstki, we created a selection of girls’ independent music
-              (Youtube, 2019){' '}
+              ➽ Together with Trzy Szóstki, we created a selection of girls’ independent music (
+              <a
+                traget='_blank'
+                rel='noopener noreferrer'
+                href='https://www.youtube.com/watch?v=bY2_Sr5AdOA'
+              >
+                Youtube
+              </a>
+              , 2019){' '}
             </Paragraph>
           </li>
         </List>

@@ -19,8 +19,4 @@ export default styled(StyledLink)`
   &:hover {
     color: #1654f2;
   }
-
-  &:focus {
-    text-decoration: underline;
-  }
 `;
