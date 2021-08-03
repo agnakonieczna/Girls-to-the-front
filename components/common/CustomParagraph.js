@@ -10,7 +10,6 @@ const paragraphContainer = {
 
 const CustomParagraph = ({ children, ...props }) => {
   const { language } = useContext(LanguageContext);
-  console.log(language);
   const controls = useAnimation();
 
   useEffect(() => {

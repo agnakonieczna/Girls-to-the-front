@@ -22,7 +22,7 @@ const listContainer = {
 const aboutMain = {
   PL: {
     first: (
-      <Paragraph width='38%'>
+      <CustomParagraph width='38%'>
         <Bold>
           Girls* to the Front to inicjatywa Agaty Wnuk i Oli Kamińskiej, działająca w Warszawie od
           2015 roku.
@@ -41,7 +41,7 @@ const aboutMain = {
           audycję w Radiu Kapitał
         </a>
         .
-      </Paragraph>
+      </CustomParagraph>
     ),
     second: (
       <Paragraph margin>

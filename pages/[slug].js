@@ -1,12 +1,14 @@
 import { createClient } from 'contentful';
 import EventDetails from '../components/event-details-page/EventDetails';
+import Loading from '../components/event-details-page/Loading';
+
 
 export async function getStaticProps(context) {
   const slug = context.params.slug;
 
   const client = createClient({
     space: process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID,
-    accessToken: process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN,
+    accessToken: process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN
   });
 
   const resp = await client.getEntries({ content_type: 'event' });
@@ -15,7 +17,7 @@ export async function getStaticProps(context) {
 
   return {
     props: {
-      selectedEvent,
+      selectedEvent
     },
     revalidate: 60
   };
@@ -24,7 +26,7 @@ export async function getStaticProps(context) {
 export async function getStaticPaths() {
   const client = createClient({
     space: process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID,
-    accessToken: process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN,
+    accessToken: process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN
   });
 
   const resp = await client.getEntries({ content_type: 'event' });
@@ -32,18 +34,24 @@ export async function getStaticPaths() {
   const paths = resp.items.map((item) => {
     return {
       params: {
-        slug: item.fields.slug,
-      },
+        slug: item.fields.slug
+      }
     };
   });
 
   return {
     paths,
-    fallback: false,
+    fallback: true
   };
 }
 
 const EventDetailsPage = ({ selectedEvent }) => {
+  if (!selectedEvent) {
+    return (
+      <Loading />
+    );
+  }
+
   return <EventDetails selectedEvent={selectedEvent} />;
 };
 
