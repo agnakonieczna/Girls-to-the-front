@@ -3,8 +3,6 @@ import Intro from '../components/zines-page/Intro/Intro';
 import ZineList from '../components/zines-page/ZineList/ZineList';
 import ScrollToTop from '../components/common/ScrollToTop';
 import { createClient } from 'contentful';
-import { useContext } from 'react';
-import { LanguageContext } from '../context/LanguageContext';
 
 export async function getStaticProps() {
   const client = createClient({
@@ -15,9 +13,10 @@ export async function getStaticProps() {
   const zinesPL = await client.getEntries({ content_type: 'zine', 'fields.language': 'PL' });
   const zinesEN = await client.getEntries({ content_type: 'zine', 'fields.language': 'EN' });
 
-  return {
-    props: { zinesPL: zinesPL.items, zinesEN: zinesEN.items }
-  };
+    return {
+        props: { zinesPL: zinesPL.items, zinesEN: zinesEN.items },
+        revalidate: 60,
+    };
 }
 
 const Zines = ({ zinesPL, zinesEN }) => {

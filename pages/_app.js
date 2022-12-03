@@ -5,7 +5,6 @@ import GlobalStyle from '../styles/GlobalStyle';
 import theme from '../styles/theme';
 import { AnimatePresence, motion } from 'framer-motion';
 import Head from 'next/head';
-import LanguageProvider from '../context/LanguageContext';
 
 const Wrapper = styled.div`
   min-height: 100vh;
