@@ -26,7 +26,7 @@ const NavigationList = ({ shopLinkClicked, toggleShopListVisibility, handleMenuC
               <ShopList clicked={shopLinkClicked}>
                 <ShopListItem onClick={handleMenuClose ? handleMenuClose : null}>
                   <a
-                    href='https://allegro.pl/uzytkownik/gttfpl'
+                    href='https://allegrolokalnie.pl/uzytkownik/GirlstotheFront'
                     target='_blank'
                     rel='noopener noreferrer'
                   >
